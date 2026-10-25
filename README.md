@@ -14,7 +14,7 @@ Your project is processed in the browser. If you choose to connect an AI model, 
 
 | | What you can do |
 |---|---|
-| 🧾 **Start from a script** | Import, paste, or drop Reel JSON; browse seven ready-to-try samples; validate before opening. |
+| 🧾 **Start from a script** | Import, paste, or drop Reel JSON; browse eight ready-to-try samples; validate before opening. |
 | 🖼️ **Animate a photo** | Import a picture as a self-contained project with automatic camera motion, then customize it. |
 | 🎛️ **Compose a scene** | Work with characters, text, shapes, paths, images, camera moves, and seeded particles. |
 | 🤖 **Create with AI** | Connect a compatible model for scoped JSON edits—or copy the repo’s creative-agent prompt. |
@@ -44,6 +44,7 @@ Open **Projects → Try a sample**:
 | 📱 Product teaser | A product-style reveal |
 | ❄️ Cooler ownership | A self-contained illustrated photo with a subtle camera move and animated airflow |
 | 🛹 Skate & Shake | A purple-haired skater bounces and sways in an 8-second looping dance |
+| ✂️ Barber’s Big Snip | A separately editable moustache wiggles through two timed snips over the supplied illustration |
 
 Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. Review the validation summary before opening or rendering it.
 

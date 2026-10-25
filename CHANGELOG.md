@@ -4,8 +4,9 @@
 
 - Moved editor styling and JavaScript out of `index.html` into static CSS and ES modules.
 - Added Reel JSON v1 validation, fractional-coordinate normalization, limits, SVG sanitization, missing/unknown reference warnings, and a SwapDraws storyboard adapter.
-- Added import via file chooser, paste dialog, global JSON drag-and-drop, five built-in sample reels plus self-contained Cooler ownership and Skate & Shake illustration samples, import summary, repair with a connected model, download/copy JSON, and the AI authoring prompt.
+- Added import via file chooser, paste dialog, global JSON drag-and-drop, five built-in sample reels plus self-contained Cooler ownership, Skate & Shake, and Barber’s Big Snip illustration samples, import summary, repair with a connected model, download/copy JSON, and the AI authoring prompt.
 - Added an eight-second Skate & Shake loop with whole-illustration bounce/sway, camera breathing, and animated accent stars.
+- Added Barber’s Big Snip as a hybrid sample: the illustration stays faithful, while the moustache is a separate animated vector path with timed snip cues.
 - Added a deterministic time-based scene evaluator and matching preview/export SVG frame path for multi-scene scripts, character clips, camera keys, shapes, text, images, and seeded particles.
 - Replaced the previous default WebM-only exporter with Mediabunny/WebCodecs H.264 MP4, then ffmpeg.wasm attempt, then a clearly disclosed WebM fallback.
 - Added OpenAI-compatible JSON patch edits with validation, selected-layer scope checks, and up to three retries.
