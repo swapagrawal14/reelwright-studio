@@ -10,11 +10,11 @@ Open `index.html` locally or serve this folder from any static host. It works as
 
 - Use **Import JSON** in the top bar, or **Projects → Import JSON**. Drop a `.json` or `.reel.json` anywhere in the page, or use **Paste JSON**.
 - Validation opens a summary with project name, canvas, duration, scene/layer/asset counts, and any warnings before the current scene is replaced.
-- Choose **Projects → Try a sample** for Run cycle, Wave hello, Photo push-in, Title card, or Product teaser. The starter sample file is `samples/run-cycle.reel.json`.
+- Choose **Projects → Try a sample** for Run cycle, Wave hello, Photo push-in, Title card, Product teaser, or Cooler ownership. The starter sample file is `samples/run-cycle.reel.json`.
 - **Download as Reel JSON** embeds assets or downloads them separately; **Copy JSON** copies the active project; **Download poster PNG** renders the current deterministic frame; **Copy AI prompt** puts the authoring prompt on the clipboard. The full prompt is also in `REEL-JSON-PROMPT.md`.
 - Files over 25 MB, more than 30 scenes, a scene over 400 layers, canvases above 3840 px per side, or projects longer than 120 seconds are rejected. Unknown rigs, clips, layer types, and missing asset references are recovered with warnings. Imported JavaScript/procedural code is never executed. SVG content is sanitized. HTTPS media is used only when the browser can fetch it; CORS may prevent loading.
 
-The JSON schema is documented in `REEL-JSON-PROMPT.md`. The code in `js/json.js` is the normalizer and validator; it resolves assets, converts fractional positions to canvas units, and creates deterministic auto timings. Sample `.reel.json` files are in `samples/`.
+The JSON schema is documented in `REEL-JSON-PROMPT.md`. The code in `js/json.js` is the normalizer and validator; it resolves assets, converts fractional positions to canvas units, and creates deterministic auto timings. Sample `.reel.json` files are in `samples/`; Cooler ownership includes its photo as an embedded image asset, so it is self-contained.
 
 ## Animation and rendering
 
