@@ -1,29 +1,50 @@
 # Reelwright Studio
 
-A browser-first prototype of an AI-assisted, layered animation editor. It opens directly into an editable sample scene; no account or backend is required.
+A static, browser-first animation editor. No application server or build step is required. Reelwright JSON v1 is the portable project format: import a script, preview it with the editor's deterministic scene clock, edit it with a connected model or local command shortcuts, and export an MP4 when supported.
 
-## Run it
+## Run and deploy
 
-- Open `index.html` in a modern browser, or serve the folder with any static web server (`python3 -m http.server 4173`).
-- Choose **Connect** to enter an OpenAI-compatible base URL, model, and API key. **Test connection** checks `GET /models`; the command bar then sends a small animation-director request to `/chat/completions`. The key is kept in memory unless **Remember on this device** is enabled.
-- Without a key/model, local command mapping still animates the starter character. Try **Run**, **Wave**, **Idle breathing**, **Dance**, or **Zoom in slowly**.
-- Drag a photo onto the artboard or use the image tool. The source file is read locally as a data URL.
-- Use **Preview** for the phone-frame player. Use the Code tab to inspect/copy a compact scene snapshot.
+Open `index.html` locally or serve this folder from any static host. It works as a static Vercel project and with GitHub Pages (deploy the repository root). No secrets or project assets are sent to a Reelwright backend.
 
-## Responsive layout and scrolling
+## Reel JSON workflow
 
-The editor uses independent scroll areas for the Layers and Inspector panels, so scrolling those lists does not move the whole workspace. On narrow screens, use the two canvas-header buttons to open Layers or Inspector as slide-over drawers; tap **Done**, the dimmed canvas, or press `Esc` to dismiss. The artboard, command bar, playback controls, and preview frame resize for mobile viewports, including short-height screens and safe-area insets.
+- Use **Import JSON** in the top bar, or **Projects → Import JSON**. Drop a `.json` or `.reel.json` anywhere in the page, or use **Paste JSON**.
+- Validation opens a summary with project name, canvas, duration, scene/layer/asset counts, and any warnings before the current scene is replaced.
+- Choose **Projects → Try a sample** for Run cycle, Wave hello, Photo push-in, Title card, or Product teaser. The starter sample file is `samples/run-cycle.reel.json`.
+- **Download as Reel JSON** embeds assets or downloads them separately; **Copy JSON** copies the active project; **Download poster PNG** renders the current deterministic frame; **Copy AI prompt** puts the authoring prompt on the clipboard. The full prompt is also in `REEL-JSON-PROMPT.md`.
+- Files over 25 MB, more than 30 scenes, a scene over 400 layers, canvases above 3840 px per side, or projects longer than 120 seconds are rejected. Unknown rigs, clips, layer types, and missing asset references are recovered with warnings. Imported JavaScript/procedural code is never executed. SVG content is sanitized. HTTPS media is used only when the browser can fetch it; CORS may prevent loading.
 
-## Controls
+The JSON schema is documented in `REEL-JSON-PROMPT.md`. The code in `js/json.js` is the normalizer and validator; it resolves assets, converts fractional positions to canvas units, and creates deterministic auto timings. Sample `.reel.json` files are in `samples/`.
 
-- `Enter`: send command · `Tab`: show/cycle command suggestions · `/` or `K`: focus the command bar
-- `Ctrl/Cmd + Z`: undo · `Ctrl/Cmd + Shift + Z`: redo · `Esc`: close overlays
-- Click the character or layer list to scope the command and inspector.
+## Animation and rendering
 
-## Privacy
+`js/engine.js` provides `evaluate(project, t)` and deterministic SVG frame output. The editor artboard, phone preview, PNG poster export, and video exporter use the same SVG frame function so the same project/time produces the same picture. Current built-in rigs are `starter-boy`, `starter-girl`, `cat`, and `robot`; character clip presets include idle, walk, run, wave, jump, dance, nod, and turn. Particles use seeded randomness.
 
-Scene data is saved to browser local storage on the same device. API credentials are sent directly to the configured model endpoint and are not uploaded to a Reelwright backend. Remembered credentials are stored in local storage only after the explicit opt-in. Use **Forget key** to clear them.
+MP4 export uses WebCodecs through Mediabunny, loaded from a CDN only when exporting. If that path is unavailable, the exporter attempts an ffmpeg.wasm conversion; if the browser or CDN blocks that fallback, it downloads a deterministic, clearly labelled WebM instead. Export remains on-device. A network connection is needed to load these optional CDN libraries.
 
-## Known limits
+Connected models use the configured OpenAI-compatible endpoint. For Reel projects the model receives a compact project and the Reel schema and returns validated, selected-layer-scoped JSON patches; invalid patches are retried up to three times. Model keys are not included in Reel JSON or export files. With no model connected, local keyword motion commands remain available.
 
-This is a functional front-end prototype, not a production animation renderer. The character is a hand-authored SVG sample; photo input remains raster and currently supports subtle camera-scale motion rather than subject segmentation or mesh warping. The local command interpreter maps a small set of requests to simple looping transforms; connected models are asked for a clip suggestion, not the full transactional vector-operation tool protocol. Scene state is locally persisted, but project history/IndexedDB, full multi-keyframe editing, rig manipulation, vectorization, state transitions, and sandboxed procedural scripts are not implemented. Export currently records a browser WebM preview when MediaRecorder is available; it does **not** produce H.264 MP4. Production MP4 output needs WebCodecs/MP4 muxing or an ffmpeg.wasm fallback. Audio muxing and the optional CORS-forwarding proxy are also not included.
+## Source layout
+
+- `index.html` — static editor shell
+- `css/style.css` — editor and responsive/mobile layouts
+- `js/util.js` — common utilities, seeded random, toast and event helpers
+- `js/model.js` — project store, undo/redo, IndexedDB autosave and local backup
+- `js/engine.js` — pure evaluator and SVG/Canvas frame path
+- `js/rigs.js` — built-in rig and clip registry
+- `js/json.js` — Reel JSON schema, migration/SwapDraws adapter, validation, and samples
+- `js/ai.js` — endpoint client, patch validation/scoping, and JSON repair
+- `js/export.js` — MP4, ffmpeg.wasm, WebM fallback and poster export
+- `js/ui/json-dialogs.js` — import, sample gallery, summary, repair, and export dialogs
+
+The app is plain ES modules; no bundler is required. Projects are autosaved to IndexedDB with a local-storage crash backup. API credentials are only remembered if the user opts in.
+
+## Tests
+
+- `npm test` — validates all built-in samples and checks JSON normalization, bad input, rig fallbacks, deterministic evaluation, and stored SVG golden hashes.
+- `npm run test:golden` — renders 9 browser PNG frames (time 0, middle, and last for Run cycle, Wave hello, and Photo push-in) and compares them with `tests/golden/png/`. The test runner needs Playwright and Chromium.
+- `npm run golden:update` — intentionally regenerate the golden PNGs after a renderer change.
+
+## Current scope / remaining work
+
+Reel JSON import/export, sample scripts, deterministic multi-scene rendering, WebCodecs MP4 export, AI JSON patches, IndexedDB autosave, and golden-frame checks are implemented. The photo sample is illustrative; automatic subject segmentation, feathered parallax/mesh warping, and vision-based vector redraw still need implementation. Audio muxing, rich draggable keyframe/pivot editing, a complete clip/state-transition UI, full multi-project thumbnail browser, and all layer transform controls remain future work. Character group/palette support is minimal in this first modular pass.

@@ -1,0 +1,10 @@
+{
+  "name": "reelwright-studio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/reel-json.test.js",
+    "test:golden": "node tests/golden-frames.mjs",
+    "golden:update": "UPDATE_GOLDENS=1 node tests/golden-frames.mjs"
+  }
+}

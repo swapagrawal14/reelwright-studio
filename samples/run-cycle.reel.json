@@ -1,0 +1,95 @@
+{
+  "reelwright": 1,
+  "name": "Run cycle",
+  "canvas": {
+    "w": 1080,
+    "h": 1920,
+    "fps": 30,
+    "bg": "#F6F7F9"
+  },
+  "duration": 6,
+  "scenes": [
+    {
+      "name": "Lucas runs",
+      "duration": 6,
+      "background": {
+        "type": "dots",
+        "color": "#F6F7F9"
+      },
+      "camera": {
+        "keys": [
+          {
+            "t": 0,
+            "x": 0.5,
+            "y": 0.5,
+            "zoom": 1.25,
+            "ease": "inOut"
+          },
+          {
+            "t": 6,
+            "x": 0.5,
+            "y": 0.5,
+            "zoom": 1
+          }
+        ]
+      },
+      "layers": [
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Lucas",
+          "font": "Bricolage Grotesque",
+          "size": 0.07,
+          "x": "center",
+          "y": 0.12,
+          "color": "#12161B",
+          "reveal": "rise",
+          "in": {
+            "fx": "rise",
+            "t": 0.2,
+            "duration": 0.6
+          }
+        },
+        {
+          "id": "lucas",
+          "type": "character",
+          "rig": "starter-boy",
+          "x": 0.5,
+          "y": 0.62,
+          "scale": 0.7,
+          "facing": "right",
+          "clips": [
+            {
+              "clip": "walk",
+              "t": 0.4,
+              "duration": 1.6,
+              "loop": true
+            },
+            {
+              "clip": "run",
+              "t": 2,
+              "duration": 2.8,
+              "loop": true
+            },
+            {
+              "clip": "wave",
+              "t": 4.8,
+              "duration": 1.2
+            }
+          ]
+        },
+        {
+          "id": "dust",
+          "type": "particles",
+          "kind": "dust",
+          "count": 40,
+          "seed": 7,
+          "color": "#C9D0D8",
+          "opacity": 0.6,
+          "start": 0,
+          "duration": 6
+        }
+      ]
+    }
+  ]
+}

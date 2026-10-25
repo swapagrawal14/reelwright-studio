@@ -1,0 +1,9 @@
+{
+  "sample": "Run cycle",
+  "renderer": "Reelwright SVG frame output v1",
+  "frames": {
+    "0": "9e54facd34bbc4e475c152202afa5d228c72a3a7bfc04880ba47f94365956caf",
+    "3": "c280bae90599b24a8aa4f5e75ef9cd760e858b1cf6f5012ab91b42379f3567a0",
+    "5.99": "8d3b9732ce3337f350037576cccb8c61893b3fd285b177f0bbacf9c21e5363c8"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "reelwright": 1,
+  "name": "Product teaser",
+  "canvas": {
+    "bg": "#131923"
+  },
+  "duration": 5,
+  "scenes": [
+    {
+      "name": "Introducing the next thing",
+      "duration": 5,
+      "background": {
+        "type": "grid",
+        "color": "#131923"
+      },
+      "layers": [
+        {
+          "id": "device",
+          "type": "shape",
+          "shape": "roundRect",
+          "x": 0.5,
+          "y": 0.48,
+          "w": 0.36,
+          "h": 0.58,
+          "fill": "#27384E",
+          "stroke": "#80B9FF",
+          "strokeWidth": 5,
+          "in": {
+            "fx": "rise",
+            "t": 0.3,
+            "duration": 0.8
+          },
+          "tracks": [
+            {
+              "prop": "rot",
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -8,
+                  "ease": "out"
+                },
+                {
+                  "t": 2.5,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5,
+                  "v": 5,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "product-name",
+          "type": "text",
+          "text": "A brighter idea.",
+          "size": 0.065,
+          "x": 0.5,
+          "y": 0.82,
+          "color": "#F2F5FA",
+          "align": "center",
+          "in": {
+            "fx": "rise",
+            "t": 1,
+            "duration": 0.6
+          }
+        },
+        {
+          "id": "shine",
+          "type": "particles",
+          "kind": "sparks",
+          "count": 18,
+          "seed": 19,
+          "color": "#80B9FF",
+          "start": 0,
+          "duration": 5,
+          "opacity": 0.8
+        }
+      ]
+    }
+  ]
+}

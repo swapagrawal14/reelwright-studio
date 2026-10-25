@@ -1,0 +1,66 @@
+{
+  "reelwright": 1,
+  "name": "Title card",
+  "canvas": {
+    "bg": "#F3EEE7"
+  },
+  "duration": 4,
+  "scenes": [
+    {
+      "name": "A title with a little motion",
+      "duration": 4,
+      "background": {
+        "type": "paper",
+        "color": "#F3EEE7"
+      },
+      "layers": [
+        {
+          "id": "orb",
+          "type": "shape",
+          "shape": "circle",
+          "x": 0.5,
+          "y": 0.45,
+          "w": 0.3,
+          "h": 0.3,
+          "fill": "#EDB857",
+          "in": {
+            "fx": "scale",
+            "t": 0.1,
+            "duration": 0.7
+          }
+        },
+        {
+          "id": "title",
+          "type": "text",
+          "text": "Make a little magic",
+          "size": 0.075,
+          "x": 0.5,
+          "y": 0.48,
+          "color": "#312B29",
+          "align": "center",
+          "weight": "700",
+          "in": {
+            "fx": "rise",
+            "t": 0.4,
+            "duration": 0.7
+          }
+        },
+        {
+          "id": "sub",
+          "type": "text",
+          "text": "A story in motion",
+          "size": 0.035,
+          "x": 0.5,
+          "y": 0.59,
+          "color": "#715C56",
+          "align": "center",
+          "in": {
+            "fx": "fade",
+            "t": 1,
+            "duration": 0.6
+          }
+        }
+      ]
+    }
+  ]
+}
