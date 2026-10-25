@@ -9,6 +9,7 @@
 - Replaced the previous default WebM-only exporter with Mediabunny/WebCodecs H.264 MP4, then ffmpeg.wasm attempt, then a clearly disclosed WebM fallback.
 - Added OpenAI-compatible JSON patch edits with validation, selected-layer scope checks, and up to three retries.
 - Added IndexedDB autosave/history plus a local crash backup, and nine browser PNG golden frames across three samples.
+- Added the repository-root `REEL-JSON-AGENT-PROMPT.md`; **Copy AI prompt** now copies this full creative brief from the static site.
 - Updated static deployment, schema, and test documentation.
 
 ## 0.1.0 — Editor prototype

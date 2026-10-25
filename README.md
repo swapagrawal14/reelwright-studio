@@ -11,7 +11,7 @@ Open `index.html` locally or serve this folder from any static host. It works as
 - Use **Import JSON** in the top bar, or **Projects → Import JSON**. Drop a `.json` or `.reel.json` anywhere in the page, or use **Paste JSON**.
 - Validation opens a summary with project name, canvas, duration, scene/layer/asset counts, and any warnings before the current scene is replaced.
 - Choose **Projects → Try a sample** for Run cycle, Wave hello, Photo push-in, Title card, Product teaser, or Cooler ownership. The starter sample file is `samples/run-cycle.reel.json`.
-- **Download as Reel JSON** embeds assets or downloads them separately; **Copy JSON** copies the active project; **Download poster PNG** renders the current deterministic frame; **Copy AI prompt** puts the authoring prompt on the clipboard. The full prompt is also in `REEL-JSON-PROMPT.md`.
+- **Download as Reel JSON** embeds assets or downloads them separately; **Copy JSON** copies the active project; **Download poster PNG** renders the current deterministic frame; **Copy AI prompt** puts the authoring prompt on the clipboard. The authoring schema prompt is in `REEL-JSON-PROMPT.md`; **Copy AI prompt** fetches the full creative brief in the repository-root `REEL-JSON-AGENT-PROMPT.md`.
 - Files over 25 MB, more than 30 scenes, a scene over 400 layers, canvases above 3840 px per side, or projects longer than 120 seconds are rejected. Unknown rigs, clips, layer types, and missing asset references are recovered with warnings. Imported JavaScript/procedural code is never executed. SVG content is sanitized. HTTPS media is used only when the browser can fetch it; CORS may prevent loading.
 
 The JSON schema is documented in `REEL-JSON-PROMPT.md`. The code in `js/json.js` is the normalizer and validator; it resolves assets, converts fractional positions to canvas units, and creates deterministic auto timings. Sample `.reel.json` files are in `samples/`; Cooler ownership includes its photo as an embedded image asset, so it is self-contained.
@@ -35,7 +35,8 @@ Connected models use the configured OpenAI-compatible endpoint. For Reel project
 - `js/json.js` — Reel JSON schema, migration/SwapDraws adapter, validation, and samples
 - `js/ai.js` — endpoint client, patch validation/scoping, and JSON repair
 - `js/export.js` — MP4, ffmpeg.wasm, WebM fallback and poster export
-- `js/ui/json-dialogs.js` — import, sample gallery, summary, repair, and export dialogs
+- `js/ui/json-dialogs.js` — import, sample gallery, summary, repair, prompt copy, and export dialogs
+- `REEL-JSON-AGENT-PROMPT.md` — detailed creative/technical brief copied by **Copy AI prompt**
 
 The app is plain ES modules; no bundler is required. Projects are autosaved to IndexedDB with a local-storage crash backup. API credentials are only remembered if the user opts in.
 
