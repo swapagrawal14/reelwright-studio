@@ -1,51 +1,108 @@
-# Reelwright Studio
+# 🎬 Reelwright Studio
 
-A static, browser-first animation editor. No application server or build step is required. Reelwright JSON v1 is the portable project format: import a script, preview it with the editor's deterministic scene clock, edit it with a connected model or local command shortcuts, and export an MP4 when supported.
+### Turn a motion idea into a tiny film—right in your browser.
 
-## Run and deploy
+**Write it. Shape it. Play it back.** Reelwright Studio is a static, browser-first editor for short animated reels. Bring a photo or a Reel JSON script, refine the timing, then export a video—all without a Reelwright server or a build step.
 
-Open `index.html` locally or serve this folder from any static host. It works as a static Vercel project and with GitHub Pages (deploy the repository root). No secrets or project assets are sent to a Reelwright backend.
+> 🌐 **Static-first** &nbsp; · &nbsp; 🧩 **No bundler** &nbsp; · &nbsp; 📦 **Portable Reel JSON v1**
 
-## Reel JSON workflow
+Your project is processed in the browser. If you choose to connect an AI model, the relevant project context is sent to that provider; Reelwright has no project backend.
 
-- Use **Import JSON** in the top bar, or **Projects → Import JSON**. Drop a `.json` or `.reel.json` anywhere in the page, or use **Paste JSON**.
-- Validation opens a summary with project name, canvas, duration, scene/layer/asset counts, and any warnings before the current scene is replaced.
-- Choose **Projects → Try a sample** for Run cycle, Wave hello, Photo push-in, Title card, Product teaser, or Cooler ownership. The starter sample file is `samples/run-cycle.reel.json`.
-- **Download as Reel JSON** embeds assets or downloads them separately; **Copy JSON** copies the active project; **Download poster PNG** renders the current deterministic frame; **Copy AI prompt** puts the authoring prompt on the clipboard. The authoring schema prompt is in `REEL-JSON-PROMPT.md`; **Copy AI prompt** fetches the full creative brief in the repository-root `REEL-JSON-AGENT-PROMPT.md`.
-- Files over 25 MB, more than 30 scenes, a scene over 400 layers, canvases above 3840 px per side, or projects longer than 120 seconds are rejected. Unknown rigs, clips, layer types, and missing asset references are recovered with warnings. Imported JavaScript/procedural code is never executed. SVG content is sanitized. HTTPS media is used only when the browser can fetch it; CORS may prevent loading.
+---
 
-The JSON schema is documented in `REEL-JSON-PROMPT.md`. The code in `js/json.js` is the normalizer and validator; it resolves assets, converts fractional positions to canvas units, and creates deterministic auto timings. Sample `.reel.json` files are in `samples/`; Cooler ownership includes its photo as an embedded image asset, so it is self-contained.
+## ✨ Make it move
 
-## Animation and rendering
+| | What you can do |
+|---|---|
+| 🧾 **Start from a script** | Import, paste, or drop Reel JSON; browse six ready-to-try samples; validate before opening. |
+| 🖼️ **Animate a photo** | Import a picture as a self-contained project with automatic camera motion, then customize it. |
+| 🎛️ **Compose a scene** | Work with characters, text, shapes, paths, images, camera moves, and seeded particles. |
+| 🤖 **Create with AI** | Connect a compatible model for scoped JSON edits—or copy the repo’s creative-agent prompt. |
+| 🎞️ **Export a reel** | Render H.264 MP4 where supported, download a poster PNG, or save/copy Reel JSON. |
+| ↩️ **Pick up where you left off** | Undo/redo, local autosave, and project history help keep experiments recoverable. |
 
-`js/engine.js` provides `evaluate(project, t)` and deterministic SVG frame output. The editor artboard, phone preview, PNG poster export, and video exporter use the same SVG frame function so the same project/time produces the same picture. Current built-in rigs are `starter-boy`, `starter-girl`, `cat`, and `robot`; character clip presets include idle, walk, run, wave, jump, dance, nod, and turn. Particles use seeded randomness.
+## 🚀 Get started
 
-MP4 export uses WebCodecs through Mediabunny, loaded from a CDN only when exporting. If that path is unavailable, the exporter attempts an ffmpeg.wasm conversion; if the browser or CDN blocks that fallback, it downloads a deterministic, clearly labelled WebM instead. Export remains on-device. A network connection is needed to load these optional CDN libraries.
+Serve the folder locally (ES modules need an HTTP origin):
 
-Connected models use the configured OpenAI-compatible endpoint. For Reel projects the model receives a compact project and the Reel schema and returns validated, selected-layer-scoped JSON patches; invalid patches are retried up to three times. Model keys are not included in Reel JSON or export files. With no model connected, local keyword motion commands remain available.
+```bash
+python3 -m http.server 4173
+```
 
-## Source layout
+Open [http://localhost:4173](http://localhost:4173). No install or compilation step is needed to run the editor. The project can also be deployed as static files to **Vercel** or **GitHub Pages** from the repository root.
 
-- `index.html` — static editor shell
-- `css/style.css` — editor and responsive/mobile layouts
-- `js/util.js` — common utilities, seeded random, toast and event helpers
-- `js/model.js` — project store, undo/redo, IndexedDB autosave and local backup
-- `js/engine.js` — pure evaluator and SVG/Canvas frame path
-- `js/rigs.js` — built-in rig and clip registry
-- `js/json.js` — Reel JSON schema, migration/SwapDraws adapter, validation, and samples
-- `js/ai.js` — endpoint client, patch validation/scoping, and JSON repair
-- `js/export.js` — MP4, ffmpeg.wasm, WebM fallback and poster export
-- `js/ui/json-dialogs.js` — import, sample gallery, summary, repair, prompt copy, and export dialogs
-- `REEL-JSON-AGENT-PROMPT.md` — detailed creative/technical brief copied by **Copy AI prompt**
+### Try a sample
 
-The app is plain ES modules; no bundler is required. Projects are autosaved to IndexedDB with a local-storage crash backup. API credentials are only remembered if the user opts in.
+Open **Projects → Try a sample**:
 
-## Tests
+| Sample | A little inspiration |
+|---|---|
+| 🏃 Run cycle | Character clips and a camera move |
+| 👋 Wave hello | A friendly character greeting |
+| 📷 Photo push-in | An image, a caption, and a gentle push |
+| ✨ Title card | A simple animated title treatment |
+| 📱 Product teaser | A product-style reveal |
+| ❄️ Cooler ownership | A self-contained illustrated photo with a subtle camera move and animated airflow |
 
-- `npm test` — validates all built-in samples and checks JSON normalization, bad input, rig fallbacks, deterministic evaluation, and stored SVG golden hashes.
-- `npm run test:golden` — renders 9 browser PNG frames (time 0, middle, and last for Run cycle, Wave hello, and Photo push-in) and compares them with `tests/golden/png/`. The test runner needs Playwright and Chromium.
-- `npm run golden:update` — intentionally regenerate the golden PNGs after a renderer change.
+Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. Review the validation summary before opening or rendering it.
 
-## Current scope / remaining work
+## 🎥 From JSON to MP4
 
-Reel JSON import/export, sample scripts, deterministic multi-scene rendering, WebCodecs MP4 export, AI JSON patches, IndexedDB autosave, and golden-frame checks are implemented. The photo sample is illustrative; automatic subject segmentation, feathered parallax/mesh warping, and vision-based vector redraw still need implementation. Audio muxing, rich draggable keyframe/pivot editing, a complete clip/state-transition UI, full multi-project thumbnail browser, and all layer transform controls remain future work. Character group/palette support is minimal in this first modular pass.
+1. **Create** a scene in Reel JSON v1, start from a sample, or import a photo.
+2. **Preview and edit** against the deterministic scene clock; use the editor’s timeline and controls to refine the result.
+3. **Export** from the top bar or project panel. The poster action captures the current deterministic frame.
+
+`js/engine.js` provides `evaluate(project, t)` and the shared SVG frame renderer. The editor artboard, preview, poster, and video export use that same frame path, so a project at a given time renders consistently. Built-in rigs include `starter-boy`, `starter-girl`, `cat`, and `robot`; available clips include idle, walk, run, wave, jump, dance, nod, and turn. Particle layouts use seeded randomness.
+
+### Export notes
+
+- 🎞️ **MP4:** WebCodecs via Mediabunny is attempted first; optional export libraries load from a CDN when needed.
+- 🧰 **Fallback:** the exporter attempts ffmpeg.wasm, then offers a clearly labelled WebM if MP4 conversion is unavailable.
+- 🌐 **Network:** the editor itself is static, but loading optional export libraries may require an internet connection and browser support.
+- 🔊 **Audio:** audio layers can be represented in projects, but audio is not yet muxed into exported video.
+
+## 🤖 AI prompt and model edits
+
+**Projects → Copy AI prompt** copies [`REEL-JSON-AGENT-PROMPT.md`](REEL-JSON-AGENT-PROMPT.md), a practical creative and technical brief for making stronger reels. [`REEL-JSON-PROMPT.md`](REEL-JSON-PROMPT.md) is the compact schema/authoring reference.
+
+You can also connect an OpenAI-compatible model from the editor. Reel edits are validated as JSON patches and limited to the selected layer’s scope; invalid results are retried up to three times. Model keys are not included in Reel JSON or exported files. With no model connected, local motion commands remain available.
+
+## 🛡️ Portable by design
+
+Reel JSON v1 is plain data—not executable scripts. The importer checks and normalizes projects before opening them, sanitizes SVG, rejects unsupported asset sources and unsafe identifiers, and enforces these limits:
+
+- **25 MB** per Reel JSON file
+- **30** scenes; **400** layers per scene
+- **3,840 px** maximum per canvas dimension
+- **120 seconds** maximum project duration
+
+Images can be embedded as data URLs or referenced by HTTPS when browser CORS permits. Projects autosave to IndexedDB with a local-storage crash backup. There is no Reelwright backend; remote assets and connected AI providers are used only when requested.
+
+## 🧪 Run the checks
+
+```bash
+npm test
+npm run test:golden
+```
+
+`npm test` checks Reel JSON validation, sample projects, security handling, and deterministic behavior. `npm run test:golden` compares nine browser-rendered PNG frames with the golden fixtures; it needs Playwright and Chromium.
+
+## 🧭 What’s here—and what’s next
+
+**Implemented:** Reel JSON import/export, samples, deterministic multi-scene rendering, H.264 MP4 export with fallbacks, model-assisted JSON patches, local history/autosave, photo push-in projects, and golden-frame tests.
+
+**Still in progress:** automatic photo subject segmentation, feathered parallax/mesh warping, vision-based vector redraw, audio muxing, rich keyframe/pivot editing, a complete clip/state-transition UI, a full thumbnail-based project browser, and complete layer controls. Character group/palette support is also minimal. GIF export is not currently available.
+
+## 🗂️ Project map
+
+| Path | What lives there |
+|---|---|
+| `index.html`, `css/style.css` | Static app shell and responsive editor UI |
+| `js/app.js` | Editor wiring, persistence, imports, and exports |
+| `js/json.js` | Reel JSON schema, normalizer, validator, and built-in samples |
+| `js/engine.js`, `js/rigs.js` | Deterministic renderer, evaluator, rigs, and clips |
+| `js/export.js` | MP4/WebM and poster rendering |
+| `js/ai.js`, `js/model.js` | Model-assisted patches and local project history |
+| `js/ui/json-dialogs.js` | Import, sample gallery, prompt copy, and export dialogs |
+| `samples/` | Importable `.reel.json` examples |
+| `tests/` | JSON checks and browser golden-frame fixtures |
