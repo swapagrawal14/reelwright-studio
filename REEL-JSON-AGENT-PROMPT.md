@@ -43,6 +43,9 @@ def embed(path, max_side=1600, q=82, png=False):
 json.dump(reel, open("my-reel.reel.json", "w"), ensure_ascii=False, indent=1)
 ```
    If you cannot run code, write the JSON with asset ids (`@hero`) and `src` values like `"assets/hero.jpg"`, and tell the user exactly which file to drop in, or hand them this script to embed it. Keep the final file under the repo's size limit (25 MB unless the repo says otherwise).
+4. **If the user asks for an editable SVG, preserve the artwork—do not redesign it.** For flat illustrations, cartoons, icons, or generated vector-style art, create a careful high-fidelity trace: match the source dimensions/viewBox, composition, silhouette, pose, colors, shapes, outlines, and important small details; use descriptive groups/paths for parts that may be edited or animated. Compare the SVG render against the source and iterate. For a photo or textured artwork, keep the raster embedded for faithful appearance and make only requested overlays editable, unless the user explicitly accepts a stylized trace. See [`IMAGE-TO-SVG-GUIDE.md`](IMAGE-TO-SVG-GUIDE.md).
+
+**Be honest about the trade-off:** wrapping the original raster in SVG preserves its pixels but does not turn them into editable vector shapes; tracing makes paths editable but cannot be guaranteed pixel-identical. In Reelwright, an SVG asset is currently a single editor layer; for parts editable in the app, use separate Reel `path`, `shape`, or `group` layers. The app has no automatic raster-to-vector converter yet. State which treatment you used and any fidelity limits.
 
 ### B. No image was given
 You must create the visuals yourself. Choose per scene:
@@ -55,6 +58,7 @@ Image-generation guidance:
 - For parallax, ask for **layers**: (1) background plate with no subject, (2) subject on transparent or plain background, (3) optional foreground elements. Transparent PNG if supported.
 - No text, logos or watermarks inside generated images (text belongs in `text` layers). No real people's likenesses and no copyrighted characters.
 - Generate only what you need, usually 2 to 5 images for a 15 to 30 second reel.
+- If the user wants the generated art to be editable, prefer authoring the illustration directly in SVG or faithfully tracing the generated raster into organized SVG paths/groups. Do not claim the trace is pixel-identical; keep the original raster as the fidelity reference.
 
 ## 3. Quality bar: what separates good from useless
 **Useless (avoid):** one static slide with a title; all layers appearing at t=0; text over busy image areas; linear easing everywhere; no camera; ten layers doing the same fade; off-canvas or overlapping elements; placeholder copy; random decorative particles; ids like `layer1`..`layer40`; a 40 MB file; effects stacked on every layer.
@@ -76,7 +80,7 @@ Image-generation guidance:
 1. **Brief in 3 lines:** goal, audience, tone. Ask at most one question, only if the idea is truly unclear; otherwise state assumptions.
 2. **Shot list** as a compact table: scene, seconds, what the viewer sees, text on screen, camera, motion, transition.
 3. **Style kit:** palette hex values, fonts, text sizes, motion language (fast/snappy or slow/dreamy).
-4. **Assets:** analyze given images, or create SVGs/images (section 2).
+4. **Assets:** analyze given images, create SVGs/images, and make a faithful editable trace when requested (section 2 and `IMAGE-TO-SVG-GUIDE.md`).
 5. **Write the JSON** using only supported fields (section 1).
 6. **Validate** (section 7). Fix, then validate again.
 7. **Deliver** (section 8).
@@ -103,6 +107,7 @@ Image-generation guidance:
 - [ ] Each scene has a camera move and a clear hero element; hook in the first 1.5 s; end card present.
 - [ ] Text counts and reading times meet section 3.
 - [ ] File size is under the limit; images are downscaled.
+- [ ] If SVG editability was requested, the deliverable is an actual path/group trace (not only a raster wrapped in SVG), the source composition has been compared, and any unavoidable fidelity trade-off is stated.
 - [ ] If you could run the validator or the app, the import summary shows no errors and no unexpected warnings.
 
 ## 8. Final answer format
@@ -111,3 +116,4 @@ Image-generation guidance:
 3. The shot list table.
 4. If you created images by prompt only, the list of prompts and the exact asset names to drop in.
 5. How to use it: open Reelwright Studio, Import JSON (or drag the file), review the summary card, "Render MP4 now".
+6. If image-to-SVG was requested, state whether the file uses an exact raster-in-SVG or an editable vector trace, and disclose any fidelity trade-off.

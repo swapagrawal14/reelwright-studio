@@ -58,6 +58,7 @@ Built-in rig IDs: `starter-boy`, `starter-girl`, `cat`, `robot`. Character clip 
 - Use only listed rigs, clips, fonts, and shapes; choose safe defaults if unsure.
 - Do not emit JavaScript, procedural code, script tags, event handlers, or external SVG references.
 - For real photos, reference an `@assetId` and use only subtle camera push, parallax, breathing, or particles. Do not alter a real person's face.
+- If a user asks to make supplied or generated art editable as SVG, preserve the source composition and make a careful high-fidelity path/group trace for flat illustrations. An SVG `<image>` containing the original raster looks pixel-identical but is not vector-editable; a vector trace is editable but cannot be guaranteed pixel-identical. For photos/textures, keep the raster and make only overlays editable unless the user accepts a stylized trace. In Reelwright, an SVG asset is one editor layer; use separate Reel `path`, `shape`, or `group` layers for app-level editing. See [`IMAGE-TO-SVG-GUIDE.md`](IMAGE-TO-SVG-GUIDE.md); automatic tracing is not built in.
 - Default to 8 seconds if the user does not specify a duration.
 
 ## User request

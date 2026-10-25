@@ -68,6 +68,12 @@ Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.ree
 
 You can also connect an OpenAI-compatible model from the editor. Reel edits are validated as JSON patches and limited to the selected layer’s scope; invalid results are retried up to three times. Model keys are not included in Reel JSON or exported files. With no model connected, local motion commands remain available.
 
+## 🧩 Image-to-SVG: faithful first, editable where possible
+
+For flat illustrations or generated vector-style art, our agent prompts now ask for a high-fidelity, named-path/group trace that preserves composition, pose, palette, and details. See [`IMAGE-TO-SVG-GUIDE.md`](IMAGE-TO-SVG-GUIDE.md).
+
+There is an unavoidable trade-off: embedding the original raster inside an SVG keeps its pixels exact but does **not** make its shapes editable; tracing those pixels into vector paths makes them editable but can only approximate the original. Photos and textured art should generally remain raster with editable vector overlays. In Reelwright today, an SVG asset is a single editor layer—use separate Reel `path`, `shape`, or `group` layers for app-level part editing. Automatic raster-to-vector tracing is not implemented yet.
+
 ## 🛡️ Portable by design
 
 Reel JSON v1 is plain data—not executable scripts. The importer checks and normalizes projects before opening them, sanitizes SVG, rejects unsupported asset sources and unsafe identifiers, and enforces these limits:
@@ -105,5 +111,6 @@ npm run test:golden
 | `js/export.js` | MP4/WebM and poster rendering |
 | `js/ai.js`, `js/model.js` | Model-assisted patches and local project history |
 | `js/ui/json-dialogs.js` | Import, sample gallery, prompt copy, and export dialogs |
+| `IMAGE-TO-SVG-GUIDE.md` | Raster fidelity vs. editable vector tracing guidance |
 | `samples/` | Importable `.reel.json` examples |
 | `tests/` | JSON checks and browser golden-frame fixtures |

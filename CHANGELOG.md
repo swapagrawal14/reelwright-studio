@@ -11,6 +11,7 @@
 - Added OpenAI-compatible JSON patch edits with validation, selected-layer scope checks, and up to three retries.
 - Added IndexedDB autosave/history plus a local crash backup, and nine browser PNG golden frames across three samples.
 - Added the repository-root `REEL-JSON-AGENT-PROMPT.md`; **Copy AI prompt** now copies this full creative brief from the static site.
+- Added `IMAGE-TO-SVG-GUIDE.md` and updated both agent prompts to request faithful, editable traces when appropriate and explain the pixel-fidelity trade-off.
 - Updated static deployment, schema, and test documentation.
 
 ## 0.1.0 — Editor prototype
