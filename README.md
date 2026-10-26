@@ -47,7 +47,7 @@ Open **Projects → Try a sample**:
 | ✂️ Barber’s Big Snip | A separately editable moustache wiggles through two timed snips over the supplied illustration |
 | 🛹 Skate Kid | A layered rider and board flip with a seamless 3.2-second loop |
 
-Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. For an AI-generated HTML animation, choose **Import HTML**: Reelwright converts inline SVG shapes/groups and CSS `@keyframes` transforms into editable Reel layers and offers a sandboxed reference preview. Review the conversion warnings before opening it. JavaScript/canvas animation, external assets, and advanced SVG/CSS effects are not converted; the preview omits scripts and external requests.
+Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. For an AI-generated HTML animation, choose **Import HTML**: Reelwright converts inline SVG shapes/groups and CSS `@keyframes` transforms into editable Reel layers and offers a sandboxed reference preview. Review the conversion warnings before opening it. JavaScript/canvas animation, external assets, and advanced SVG/CSS effects are not converted. HTML without convertible inline SVG still opens as a safe, read-only preview; scripts and external requests are disabled there.
 
 ## 🎥 From JSON to MP4
 
