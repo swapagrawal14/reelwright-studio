@@ -7,7 +7,7 @@ const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 function setOpen(id,open=true){$(id)?.classList.toggle('open',open)}
 function clearFile(input){if(input)input.value=''}
 function formatSize(bytes){if(bytes<1024)return `${bytes} B`;if(bytes<1024*1024)return `${(bytes/1024).toFixed(1)} KB`;return `${(bytes/1024/1024).toFixed(2)} MB`}
-function layerCount(scene){return(scene.layers||[]).reduce((n,l)=>n+1+(l.type==='group'?layerCount({layers:l.children||[]}):0),0)}
+function layerCount(scene){return(scene.layers||[]).reduce((n,l)=>n+1+(l.type==='group'||l.type==='vector'?layerCount({layers:l.children||l.parts||[]}):0),0)}
 function allLayers(project){return project.scenes.reduce((n,s)=>n+layerCount(s),0)}
 function assetsBytes(project){return Object.values(project.assets||{}).reduce((n,a)=>n+(a.src?.length||0),0)}
 function addSampleCard(s){const b=document.createElement('button');b.className='sample-card';b.innerHTML=`<strong>${escapeHtml(s.label)}</strong><span>${escapeHtml(s.data.scenes[0].name)} · ${s.data.duration||s.data.scenes.reduce((a,x)=>a+x.duration,0)} sec</span>`;b.onclick=()=>{setOpen('#sampleModal',false);acceptText(JSON.stringify(s.data),`${s.label}.reel.json`)};$('#sampleGallery').append(b)}
