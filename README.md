@@ -50,9 +50,11 @@ Open **Projects → Try a sample**:
 | 🤖 Pocket Bot · A Big Hello | A floating pearl robot waves through a friendly anticipation-and-settle loop with antenna lag, LED blinks, and a soft hover shadow |
 | 🌼 Daisy Daydream · Bloom & Flutter | Petals unfold in a staggered bloom while a bee traces a looping flight arc and leaves sway gently |
 
-### Skate Kid video
+### Skate Kid demo — rendered by Reelwright
 
-[Watch/download the Skate Kid MP4 via Send Anywhere](https://sendanywhe.re/4DQINPXC). This is a temporary external share link rather than an embedded GitHub video; Send Anywhere currently reports that the download quota has been exceeded.
+[![Watch the 3.2-second Skate Kid animation](docs/media/skate-kid-preview.gif)](docs/media/skate-kid-demo.mp4)
+
+The animated preview plays directly in the README; click it to open/download the **H.264 MP4** exported from [`samples/skate-kid.reel.json`](samples/skate-kid.reel.json).
 
 Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. For an AI-generated HTML animation, choose **Import HTML**: Reelwright converts inline SVG shapes/groups and CSS `@keyframes` transforms into editable Reel layers and offers a sandboxed reference preview. Review the conversion warnings before opening it. JavaScript/canvas animation, external assets, and advanced SVG/CSS effects are not converted. HTML without convertible inline SVG still opens as a safe, read-only preview; scripts and external requests are disabled there.
 
