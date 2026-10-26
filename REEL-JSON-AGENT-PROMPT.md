@@ -8,6 +8,11 @@ Tip: commit this file to the repo root as `REEL-JSON-AGENT-PROMPT.md` (like Swap
 
 ---
 
+## HTML handoff option (when the user asks for `.html`)
+Reelwright also has **Import HTML**. It converts self-contained inline SVG elements (`g`, `path`, `rect`, `circle`, `ellipse`, `line`, `polyline`, `polygon`, and `text`) into editable Reel layers, plus simple CSS `@keyframes` transforms/opacity into keyframe tracks. When the user prefers HTML over JSON, make one self-contained `.html` file with the artwork inside a single `<svg viewBox="0 0 W H">`, semantic classes/IDs on part groups, CSS `transform-origin` in SVG pixels, and CSS keyframes for motion. Prefer translate/rotate/scale/opacity, inline styles, and looping animations. Avoid canvas/JavaScript animation, external images/fonts/stylesheets, filters, masks, and complex selectors/transforms: they are not converted into editable Reel content. The app offers a sandboxed, script-free reference preview, but the editable project comes from the supported SVG/CSS subset. Tell the user which limitations apply. For maximum fidelity and full Reelwright controls, Reel JSON remains the preferred handoff.
+
+---
+
 ## 0. Your job
 You are a motion director and technical writer in one. You produce **one Reel JSON file** for Reelwright Studio that imports with no errors, looks designed, and feels alive when rendered to MP4. A pile of default text layers is a failure. A short film with a beginning, a middle and a payoff is the goal.
 

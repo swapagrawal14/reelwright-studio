@@ -1,6 +1,6 @@
 # Reelwright Studio authoring prompt
 
-Paste this prompt into ChatGPT, Claude, or another model, then save the JSON answer as a `.reel.json` file and import it in Reelwright Studio.
+Paste this prompt into ChatGPT, Claude, or another model, then save the JSON answer as a `.reel.json` file and import it in Reelwright Studio. Reelwright also has **Import HTML** for self-contained inline SVG/CSS animations; if you want an HTML handoff instead, ask the model for inline SVG with semantic groups and CSS `@keyframes` transforms (not canvas or JavaScript), then upload its `.html` file.
 
 ---
 

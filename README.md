@@ -2,7 +2,7 @@
 
 ### Turn a motion idea into a tiny film—right in your browser.
 
-**Write it. Shape it. Play it back.** Reelwright Studio is a static, browser-first editor for short animated reels. Bring a photo or a Reel JSON script, refine the timing, then export a video—all without a Reelwright server or a build step.
+**Write it. Shape it. Play it back.** Reelwright Studio is a static, browser-first editor for short animated reels. Bring a photo, a self-contained SVG/CSS HTML animation, or a Reel JSON script, refine the timing, then export a video—all without a Reelwright server or a build step.
 
 > 🌐 **Static-first** &nbsp; · &nbsp; 🧩 **No bundler** &nbsp; · &nbsp; 📦 **Portable Reel JSON v1**
 
@@ -14,7 +14,7 @@ Your project is processed in the browser. If you choose to connect an AI model, 
 
 | | What you can do |
 |---|---|
-| 🧾 **Start from a script** | Import, paste, or drop Reel JSON; browse eight ready-to-try samples; validate before opening. |
+| 🧾 **Import an animation** | Import, paste, or drop Reel JSON, or use **Import HTML** for inline SVG/CSS animations; validate before opening. |
 | 🖼️ **Animate a photo** | Import a picture as a self-contained project with automatic camera motion, then customize it. |
 | 🎛️ **Compose a scene** | Work with characters, text, shapes, paths, images, camera moves, and seeded particles. |
 | 🤖 **Create with AI** | Connect a compatible model for scoped JSON edits—or copy the repo’s creative-agent prompt. |
@@ -45,8 +45,9 @@ Open **Projects → Try a sample**:
 | ❄️ Cooler ownership | A self-contained illustrated photo with a subtle camera move and animated airflow |
 | 🛹 Skate & Shake | A purple-haired skater bounces and sways in an 8-second looping dance |
 | ✂️ Barber’s Big Snip | A separately editable moustache wiggles through two timed snips over the supplied illustration |
+| 🛹 Skate Kid | A layered rider and board flip with a seamless 3.2-second loop |
 
-Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. Review the validation summary before opening or rendering it.
+Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. For an AI-generated HTML animation, choose **Import HTML**: Reelwright converts inline SVG shapes/groups and CSS `@keyframes` transforms into editable Reel layers and offers a sandboxed reference preview. Review the conversion warnings before opening it. JavaScript/canvas animation, external assets, and advanced SVG/CSS effects are not converted; the preview omits scripts and external requests.
 
 ## 🎥 From JSON to MP4
 

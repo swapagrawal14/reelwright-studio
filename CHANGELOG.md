@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0 — Import HTML animations
+
+- Added a dedicated HTML upload button and project-menu action; self-contained inline SVG markup becomes editable paths/text/groups, and CSS keyframe transforms map to Reel tracks.
+- Added import summary warnings and a sandboxed reference preview that omits JavaScript and blocks external requests; canvas/JS-only pages are clearly rejected for editable conversion.
+- Converted the supplied Skate Kid HTML into 64 editable layers; board-flip motion maps to negative `scaleY` at the ollie beat.
+- Added HTML import tests and updated usage/agent guidance.
+
 ## 0.3.0 — Editable motion, image tracing, and Skate Kid
 
 - Added hierarchical group and vector layers, draggable local pivots, per-segment cubic easing, delayed/windowed/repeating/yoyo tracks, continuous rotation, and wrapped scroll.
