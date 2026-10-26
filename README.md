@@ -52,9 +52,9 @@ Open **Projects → Try a sample**:
 
 ### Skate Kid demo — rendered by Reelwright
 
-[![Watch the 3.2-second Skate Kid animation](docs/media/skate-kid-preview.gif)](docs/media/skate-kid-demo.mp4)
+![Animated preview of Reelwright’s 3.2-second Skate Kid export](docs/media/skate-kid-preview.gif)
 
-The animated preview plays directly in the README; click it to open/download the **H.264 MP4** exported from [`samples/skate-kid.reel.json`](samples/skate-kid.reel.json).
+[Download the H.264 MP4](docs/media/skate-kid-demo.mp4) rendered from [`samples/skate-kid.reel.json`](samples/skate-kid.reel.json).
 
 Or bring your own: choose **Import JSON**, paste JSON, or drop a `.json` / `.reel.json` file onto the page. For an AI-generated HTML animation, choose **Import HTML**: Reelwright converts inline SVG shapes/groups and CSS `@keyframes` transforms into editable Reel layers and offers a sandboxed reference preview. Review the conversion warnings before opening it. JavaScript/canvas animation, external assets, and advanced SVG/CSS effects are not converted. HTML without convertible inline SVG still opens as a safe, read-only preview; scripts and external requests are disabled there.
 
