@@ -32,7 +32,8 @@ Do not pretend a photo has become vector-editable just because it is wrapped in 
 
 - An SVG supplied as an `svg`/image asset currently behaves as **one image layer** in the editor; the editor does not expose its internal SVG paths as separate controls.
 - For parts that need to be independently animated or edited inside Reelwright, model them as separate Reel `path`, `shape`, or `group` layers. Keep IDs descriptive and hierarchy shallow.
-- The app does not currently provide automatic raster-to-vector tracing or vision-based redraw. An agent must create/trace the SVG itself, use a suitable external vectorization tool, or keep the original raster and be clear about the limitation.
+- The browser includes a raster-to-vector trace tool for flat illustrations: color quantization, connected-region contour paths, tiny-region merging, and editable part naming/pivots. A connected vision model may suggest names and pivots; manual labeling works offline. This is an approximation, not a perfect detector: it may merge small details, miss semantic joints, and does not reliably reconstruct hidden/occluded fill. Review and adjust the trace, especially for complex doodles.
+- An imported SVG asset still behaves as one image layer; use separate Reel `path`, `shape`, `vector`, or nested `group` layers for app-level part edits. Follow the actual Reel JSON schema and sanitizer.
 - Follow the repository's actual Reel JSON schema and SVG sanitizer. Use plain SVG data—no scripts, event handlers, external references, or executable content.
 
 ## Delivery checklist

@@ -1,0 +1,1546 @@
+{
+  "reelwright": 1,
+  "name": "Skate Kid · Ollie and board flip",
+  "canvas": {
+    "w": 560,
+    "h": 600,
+    "fps": 30,
+    "bg": "#EFE6FB"
+  },
+  "duration": 3.2,
+  "assets": {},
+  "scenes": [
+    {
+      "name": "Skate Kid · 3.2s seamless ollie",
+      "duration": 3.2,
+      "background": {
+        "type": "color",
+        "color": "#EFE6FB"
+      },
+      "camera": {
+        "auto": false
+      },
+      "layers": [
+        {
+          "id": "lavender-card",
+          "name": "Rounded lavender card",
+          "type": "path",
+          "x": 280,
+          "y": 280,
+          "w": 560,
+          "h": 560,
+          "d": "M28 0H532Q560 0 560 28V532Q560 560 532 560H28Q0 560 0 532V28Q0 0 28 0Z",
+          "fill": "#DDD0F6",
+          "stroke": "none",
+          "strokeWidth": 0,
+          "start": 0,
+          "duration": 3.2
+        },
+        {
+          "id": "background-motion",
+          "name": "Moving doodle streaks",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 0,
+            "y": 0
+          },
+          "children": [
+            {
+              "id": "cloud-a",
+              "name": "Cloud streak",
+              "type": "path",
+              "x": 65,
+              "y": 87,
+              "w": 130,
+              "h": 34,
+              "d": "M17 0H113Q130 0 130 17Q130 34 113 34H17Q0 34 0 17Q0 0 17 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.45,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 65,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "cloud-b",
+              "name": "Cloud streak",
+              "type": "path",
+              "x": 325,
+              "y": 143,
+              "w": 90,
+              "h": 26,
+              "d": "M13 0H77Q90 0 90 13Q90 26 77 26H13Q0 26 0 13Q0 0 13 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.45,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 325,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "speed-line-1",
+              "name": "Speed line",
+              "type": "path",
+              "x": 55,
+              "y": 254,
+              "w": 110,
+              "h": 8,
+              "d": "M4 0H106Q110 0 110 4Q110 8 106 8H4Q0 8 0 4Q0 0 4 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.7,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 55,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "speed-line-2",
+              "name": "Speed line",
+              "type": "path",
+              "x": 340,
+              "y": 334,
+              "w": 80,
+              "h": 8,
+              "d": "M4 0H76Q80 0 80 4Q80 8 76 8H4Q0 8 0 4Q0 0 4 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.7,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 340,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "speed-line-3",
+              "name": "Speed line",
+              "type": "path",
+              "x": 125,
+              "y": 404,
+              "w": 130,
+              "h": 8,
+              "d": "M4 0H126Q130 0 130 4Q130 8 126 8H4Q0 8 0 4Q0 0 4 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.7,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 125,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "speed-line-4",
+              "name": "Speed line",
+              "type": "path",
+              "x": 395,
+              "y": 184,
+              "w": 70,
+              "h": 8,
+              "d": "M4 0H66Q70 0 70 4Q70 8 66 8H4Q0 8 0 4Q0 0 4 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.7,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 395,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "ground-dash-1",
+              "name": "Ground dash",
+              "type": "path",
+              "x": 95,
+              "y": 526,
+              "w": 90,
+              "h": 8,
+              "d": "M4 0H86Q90 0 90 4Q90 8 86 8H4Q0 8 0 4Q0 0 4 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.7,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 95,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            },
+            {
+              "id": "ground-dash-2",
+              "name": "Ground dash",
+              "type": "path",
+              "x": 290,
+              "y": 526,
+              "w": 60,
+              "h": 8,
+              "d": "M4 0H56Q60 0 60 4Q60 8 56 8H4Q0 8 0 4Q0 0 4 0Z",
+              "fill": "#FFFFFF",
+              "stroke": "none",
+              "strokeWidth": 0,
+              "opacity": 0.7,
+              "tracks": [
+                {
+                  "prop": "translateX",
+                  "mode": "scroll",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 290,
+                      "ease": "inOut"
+                    }
+                  ],
+                  "speed": -60,
+                  "wrap": 192
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 3.2
+        },
+        {
+          "id": "shadow",
+          "name": "Responsive ground shadow",
+          "type": "group",
+          "x": 280,
+          "y": 504,
+          "pivot": {
+            "x": 0,
+            "y": 0
+          },
+          "children": [
+            {
+              "id": "shadow-oval",
+              "name": "Ground shadow",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 0,
+              "y": 0,
+              "w": 250,
+              "h": 24,
+              "fill": "#B9A3E0"
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "scaleX",
+              "mode": "keyframes",
+              "period": 3.2,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.984,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.56,
+                  "v": 0.6,
+                  "ease": "out"
+                },
+                {
+                  "t": 2.88,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.2,
+                  "v": 1,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "opacity",
+              "mode": "keyframes",
+              "period": 3.2,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.984,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.56,
+                  "v": 0.5,
+                  "ease": "out"
+                },
+                {
+                  "t": 2.88,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.2,
+                  "v": 1,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 3.2
+        },
+        {
+          "id": "rider",
+          "name": "Rider · ollie",
+          "type": "group",
+          "x": 280,
+          "y": 280,
+          "pivot": {
+            "x": 0,
+            "y": 0
+          },
+          "tracks": [
+            {
+              "prop": "translateY",
+              "mode": "keyframes",
+              "period": 3.2,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 280,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.6,
+                  "v": 280,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.92,
+                  "v": 294,
+                  "ease": "in"
+                },
+                {
+                  "t": 2.56,
+                  "v": 198,
+                  "ease": "out"
+                },
+                {
+                  "t": 2.88,
+                  "v": 280,
+                  "ease": "in"
+                },
+                {
+                  "t": 3.2,
+                  "v": 280,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "children": [
+            {
+              "id": "board",
+              "name": "Skateboard · kickflip",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 0,
+                "y": 186
+              },
+              "tracks": [
+                {
+                  "prop": "rotate",
+                  "mode": "keyframes",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.92,
+                      "v": 0,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.176,
+                      "v": -16,
+                      "ease": "in"
+                    },
+                    {
+                      "t": 2.432,
+                      "v": -6,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.688,
+                      "v": 8,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.88,
+                      "v": 0,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.2,
+                      "v": 0,
+                      "ease": "inOut"
+                    }
+                  ]
+                },
+                {
+                  "prop": "scaleY",
+                  "mode": "keyframes",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.92,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.176,
+                      "v": 1,
+                      "ease": "in"
+                    },
+                    {
+                      "t": 2.432,
+                      "v": -1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.688,
+                      "v": 1,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.88,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.2,
+                      "v": 1,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "id": "deck",
+                  "name": "Warm wood skateboard deck",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 0,
+                  "y": 187,
+                  "w": 260,
+                  "h": 26,
+                  "fill": "#C48A50"
+                },
+                {
+                  "id": "truck-left",
+                  "name": "Front truck",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": -65,
+                  "y": 204,
+                  "w": 50,
+                  "h": 8,
+                  "fill": "#E2B77A"
+                },
+                {
+                  "id": "truck-right",
+                  "name": "Rear truck",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 65,
+                  "y": 204,
+                  "w": 50,
+                  "h": 8,
+                  "fill": "#E2B77A"
+                },
+                {
+                  "id": "wheel-front",
+                  "name": "Front wheel",
+                  "type": "group",
+                  "x": -65,
+                  "y": 207,
+                  "pivot": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tracks": [
+                    {
+                      "prop": "rotate",
+                      "mode": "continuous",
+                      "period": 0.32,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 0,
+                          "ease": "inOut"
+                        }
+                      ],
+                      "speed": 1125
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "wheel-front-wheel",
+                      "name": "Blue skateboard wheel",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 0,
+                      "y": 0,
+                      "w": 28,
+                      "h": 28,
+                      "fill": "#4A6FC4"
+                    },
+                    {
+                      "id": "wheel-front-axle",
+                      "name": "Wheel axle marker",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 0,
+                      "y": -8,
+                      "w": 4,
+                      "h": 12,
+                      "fill": "#7E9BE0"
+                    }
+                  ]
+                },
+                {
+                  "id": "wheel-rear",
+                  "name": "Rear wheel",
+                  "type": "group",
+                  "x": 65,
+                  "y": 207,
+                  "pivot": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "tracks": [
+                    {
+                      "prop": "rotate",
+                      "mode": "continuous",
+                      "period": 0.32,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 0,
+                          "ease": "inOut"
+                        }
+                      ],
+                      "speed": 1125
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "wheel-rear-wheel",
+                      "name": "Blue skateboard wheel",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 0,
+                      "y": 0,
+                      "w": 28,
+                      "h": 28,
+                      "fill": "#4A6FC4"
+                    },
+                    {
+                      "id": "wheel-rear-axle",
+                      "name": "Wheel axle marker",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 0,
+                      "y": -8,
+                      "w": 4,
+                      "h": 12,
+                      "fill": "#7E9BE0"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "stretch",
+              "name": "Stretch · squash and stretch",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 0,
+                "y": 176
+              },
+              "tracks": [
+                {
+                  "prop": "scaleX",
+                  "mode": "keyframes",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.6,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.92,
+                      "v": 1.08,
+                      "ease": "in"
+                    },
+                    {
+                      "t": 2.176,
+                      "v": 0.92,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.56,
+                      "v": 0.96,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.88,
+                      "v": 1.1,
+                      "ease": "in"
+                    },
+                    {
+                      "t": 3.072,
+                      "v": 0.98,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 3.2,
+                      "v": 1,
+                      "ease": "inOut"
+                    }
+                  ]
+                },
+                {
+                  "prop": "scaleY",
+                  "mode": "keyframes",
+                  "period": 3.2,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.6,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.92,
+                      "v": 0.86,
+                      "ease": "in"
+                    },
+                    {
+                      "t": 2.176,
+                      "v": 1.14,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.56,
+                      "v": 1.06,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 2.88,
+                      "v": 0.84,
+                      "ease": "in"
+                    },
+                    {
+                      "t": 3.072,
+                      "v": 1.03,
+                      "ease": "out"
+                    },
+                    {
+                      "t": 3.2,
+                      "v": 1,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "children": [
+                {
+                  "id": "squash",
+                  "name": "Squash · settle",
+                  "type": "group",
+                  "x": 0,
+                  "y": -46,
+                  "pivot": {
+                    "x": 0,
+                    "y": 176
+                  },
+                  "tracks": [
+                    {
+                      "prop": "scaleX",
+                      "mode": "keyframes",
+                      "period": 0.8,
+                      "repeat": true,
+                      "alternate": true,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 0.8,
+                          "v": 1.02,
+                          "ease": "inOut"
+                        }
+                      ]
+                    },
+                    {
+                      "prop": "scaleY",
+                      "mode": "keyframes",
+                      "period": 0.8,
+                      "repeat": true,
+                      "alternate": true,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 0.8,
+                          "v": 0.96,
+                          "ease": "inOut"
+                        }
+                      ]
+                    },
+                    {
+                      "prop": "rotate",
+                      "mode": "keyframes",
+                      "period": 0.8,
+                      "repeat": true,
+                      "alternate": true,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": -1.2,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 0.8,
+                          "v": 1.2,
+                          "ease": "inOut"
+                        }
+                      ]
+                    }
+                  ],
+                  "children": [
+                    {
+                      "id": "leg-left",
+                      "name": "Left leg",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": -19,
+                      "y": 180,
+                      "w": 22,
+                      "h": 60,
+                      "fill": "#FDBA94"
+                    },
+                    {
+                      "id": "leg-right",
+                      "name": "Right leg",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 23,
+                      "y": 180,
+                      "w": 22,
+                      "h": 60,
+                      "fill": "#FDBA94"
+                    },
+                    {
+                      "id": "shoe-left",
+                      "name": "Left blue skate shoe",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": -27,
+                      "y": 212,
+                      "w": 50,
+                      "h": 22,
+                      "fill": "#4A6FC4"
+                    },
+                    {
+                      "id": "shoe-right",
+                      "name": "Right blue skate shoe",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 36,
+                      "y": 212,
+                      "w": 50,
+                      "h": 22,
+                      "fill": "#4A6FC4"
+                    },
+                    {
+                      "id": "arm-left",
+                      "name": "Left arm · follow-through",
+                      "type": "group",
+                      "x": -65,
+                      "y": 55,
+                      "pivot": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tracks": [
+                        {
+                          "prop": "rotate",
+                          "mode": "keyframes",
+                          "period": 0.8,
+                          "repeat": true,
+                          "alternate": true,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": -20,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 0.8,
+                              "v": 16,
+                              "ease": "inOut"
+                            }
+                          ],
+                          "delay": 0
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "arm-left-sleeve",
+                          "name": "Orange hoodie sleeve",
+                          "type": "path",
+                          "x": -15.5,
+                          "y": 37.5,
+                          "w": 31,
+                          "h": 75,
+                          "d": "M31 0L0 75",
+                          "fill": "none",
+                          "stroke": "#FF7A1F",
+                          "strokeWidth": 32
+                        },
+                        {
+                          "id": "hand-left",
+                          "name": "Peach hand",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": -33,
+                          "y": 91,
+                          "w": 26,
+                          "h": 26,
+                          "fill": "#FDBA94"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "arm-right",
+                      "name": "Right arm · follow-through",
+                      "type": "group",
+                      "x": 55,
+                      "y": 55,
+                      "pivot": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tracks": [
+                        {
+                          "prop": "rotate",
+                          "mode": "keyframes",
+                          "period": 0.8,
+                          "repeat": true,
+                          "alternate": true,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": 16,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 0.8,
+                              "v": -20,
+                              "ease": "inOut"
+                            }
+                          ],
+                          "delay": 0.06
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "arm-right-sleeve",
+                          "name": "Orange hoodie sleeve",
+                          "type": "path",
+                          "x": -15.5,
+                          "y": 37.5,
+                          "w": 31,
+                          "h": 75,
+                          "d": "M31 0L0 75",
+                          "fill": "none",
+                          "stroke": "#FF7A1F",
+                          "strokeWidth": 32
+                        },
+                        {
+                          "id": "hand-right",
+                          "name": "Peach hand",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 36,
+                          "y": 91,
+                          "w": 26,
+                          "h": 26,
+                          "fill": "#FDBA94"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "hoodie",
+                      "name": "Bright orange hoodie",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": -5,
+                      "y": 100,
+                      "w": 142,
+                      "h": 136,
+                      "fill": "#FF7A1F"
+                    },
+                    {
+                      "id": "hoodie-yoke",
+                      "name": "Darker hoodie yoke",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": -8,
+                      "y": -4,
+                      "w": 144,
+                      "h": 40,
+                      "fill": "#E8671A"
+                    },
+                    {
+                      "id": "hoodie-pocket",
+                      "name": "Front hoodie pocket",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": -2,
+                      "y": 84,
+                      "w": 80,
+                      "h": 44,
+                      "fill": "#E5671A"
+                    },
+                    {
+                      "id": "head",
+                      "name": "Head · tilt",
+                      "type": "group",
+                      "x": -8,
+                      "y": 40,
+                      "pivot": {
+                        "x": 0,
+                        "y": 0
+                      },
+                      "tracks": [
+                        {
+                          "prop": "rotate",
+                          "mode": "keyframes",
+                          "period": 1.6,
+                          "repeat": true,
+                          "alternate": true,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": -2,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.6,
+                              "v": 2,
+                              "ease": "inOut"
+                            }
+                          ]
+                        }
+                      ],
+                      "children": [
+                        {
+                          "id": "hair-back",
+                          "name": "Back curls",
+                          "type": "group",
+                          "x": 0,
+                          "y": 0,
+                          "pivot": {
+                            "x": 0,
+                            "y": -150
+                          },
+                          "tracks": [
+                            {
+                              "prop": "rotate",
+                              "mode": "keyframes",
+                              "period": 0.8,
+                              "repeat": true,
+                              "alternate": true,
+                              "keys": [
+                                {
+                                  "t": 0,
+                                  "v": -3,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 0.8,
+                                  "v": 3,
+                                  "ease": "inOut"
+                                }
+                              ],
+                              "delay": 0.12
+                            },
+                            {
+                              "prop": "translateY",
+                              "mode": "keyframes",
+                              "period": 0.8,
+                              "repeat": true,
+                              "alternate": true,
+                              "keys": [
+                                {
+                                  "t": 0,
+                                  "v": 0,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 0.8,
+                                  "v": -3,
+                                  "ease": "inOut"
+                                }
+                              ],
+                              "delay": 0.12
+                            }
+                          ],
+                          "children": [
+                            {
+                              "id": "curl-back-center",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -2,
+                              "y": -202,
+                              "w": 124,
+                              "h": 124,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-back-left",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -64,
+                              "y": -218,
+                              "w": 92,
+                              "h": 92,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-back-right",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 62,
+                              "y": -218,
+                              "w": 92,
+                              "h": 92,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-side-left",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -106,
+                              "y": -168,
+                              "w": 76,
+                              "h": 76,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-side-right",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 106,
+                              "y": -168,
+                              "w": 76,
+                              "h": 76,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-top-left",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -36,
+                              "y": -248,
+                              "w": 80,
+                              "h": 80,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-top-right",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 34,
+                              "y": -246,
+                              "w": 84,
+                              "h": 84,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-lower-left",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -82,
+                              "y": -124,
+                              "w": 56,
+                              "h": 56,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-lower-right",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 88,
+                              "y": -124,
+                              "w": 56,
+                              "h": 56,
+                              "fill": "#8455B0"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "ear-left",
+                          "name": "Left ear",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": -100,
+                          "y": -78,
+                          "w": 34,
+                          "h": 34,
+                          "fill": "#FDBA94"
+                        },
+                        {
+                          "id": "ear-right",
+                          "name": "Right ear",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 104,
+                          "y": -78,
+                          "w": 34,
+                          "h": 34,
+                          "fill": "#FDBA94"
+                        },
+                        {
+                          "id": "face-shape",
+                          "name": "Peach face",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 0,
+                          "y": -85,
+                          "w": 224,
+                          "h": 184,
+                          "fill": "#FDBA94"
+                        },
+                        {
+                          "id": "hair-front",
+                          "name": "Front curls",
+                          "type": "group",
+                          "x": 0,
+                          "y": 0,
+                          "pivot": {
+                            "x": 0,
+                            "y": -150
+                          },
+                          "tracks": [
+                            {
+                              "prop": "rotate",
+                              "mode": "keyframes",
+                              "period": 0.8,
+                              "repeat": true,
+                              "alternate": true,
+                              "keys": [
+                                {
+                                  "t": 0,
+                                  "v": -3,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 0.8,
+                                  "v": 3,
+                                  "ease": "inOut"
+                                }
+                              ],
+                              "delay": 0.18
+                            }
+                          ],
+                          "children": [
+                            {
+                              "id": "curl-fringe-left",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -66,
+                              "y": -150,
+                              "w": 60,
+                              "h": 60,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-fringe-center-left",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": -20,
+                              "y": -162,
+                              "w": 64,
+                              "h": 64,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-fringe-center-right",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 30,
+                              "y": -160,
+                              "w": 64,
+                              "h": 64,
+                              "fill": "#8455B0"
+                            },
+                            {
+                              "id": "curl-fringe-right",
+                              "name": "Purple curl",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 72,
+                              "y": -146,
+                              "w": 54,
+                              "h": 54,
+                              "fill": "#8455B0"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "eye-left",
+                          "name": "Left eye · blink",
+                          "type": "group",
+                          "x": -20,
+                          "y": -96,
+                          "pivot": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tracks": [
+                            {
+                              "prop": "scaleY",
+                              "mode": "keyframes",
+                              "period": 3.2,
+                              "repeat": true,
+                              "alternate": false,
+                              "keys": [
+                                {
+                                  "t": 0,
+                                  "v": 1,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 2.976,
+                                  "v": 1,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 3.056,
+                                  "v": 0.1,
+                                  "ease": "in"
+                                },
+                                {
+                                  "t": 3.136,
+                                  "v": 1,
+                                  "ease": "out"
+                                },
+                                {
+                                  "t": 3.2,
+                                  "v": 1,
+                                  "ease": "inOut"
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "id": "eye-left-shape",
+                              "name": "Black eye",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 0,
+                              "y": 0,
+                              "w": 13.0,
+                              "h": 22,
+                              "fill": "#111111"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "eye-right",
+                          "name": "Right eye · blink",
+                          "type": "group",
+                          "x": 44,
+                          "y": -94,
+                          "pivot": {
+                            "x": 0,
+                            "y": 0
+                          },
+                          "tracks": [
+                            {
+                              "prop": "scaleY",
+                              "mode": "keyframes",
+                              "period": 3.2,
+                              "repeat": true,
+                              "alternate": false,
+                              "keys": [
+                                {
+                                  "t": 0,
+                                  "v": 1,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 2.976,
+                                  "v": 1,
+                                  "ease": "inOut"
+                                },
+                                {
+                                  "t": 3.056,
+                                  "v": 0.1,
+                                  "ease": "in"
+                                },
+                                {
+                                  "t": 3.136,
+                                  "v": 1,
+                                  "ease": "out"
+                                },
+                                {
+                                  "t": 3.2,
+                                  "v": 1,
+                                  "ease": "inOut"
+                                }
+                              ]
+                            }
+                          ],
+                          "children": [
+                            {
+                              "id": "eye-right-shape",
+                              "name": "Black eye",
+                              "type": "shape",
+                              "shape": "ellipse",
+                              "x": 0,
+                              "y": 0,
+                              "w": 13.0,
+                              "h": 22,
+                              "fill": "#111111"
+                            }
+                          ]
+                        },
+                        {
+                          "id": "nose",
+                          "name": "Small curved nose",
+                          "type": "path",
+                          "x": 20,
+                          "y": -87.5,
+                          "w": 16,
+                          "h": 9,
+                          "d": "M0 0Q10 0 6 9",
+                          "fill": "none",
+                          "stroke": "#111111",
+                          "strokeWidth": 3.5
+                        },
+                        {
+                          "id": "smile",
+                          "name": "Smile",
+                          "type": "path",
+                          "x": 11,
+                          "y": -61,
+                          "w": 42,
+                          "h": 14,
+                          "d": "M0 0Q20 14 42 0",
+                          "fill": "none",
+                          "stroke": "#111111",
+                          "strokeWidth": 4.5
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 3.2
+        },
+        {
+          "id": "caption",
+          "name": "Doodle caption",
+          "type": "text",
+          "text": "SKATE KID  ·  SWAP’S DOODLES",
+          "font": "system-ui, sans-serif",
+          "size": 14,
+          "weight": 700,
+          "align": "center",
+          "color": "#2A1F3D",
+          "x": 280,
+          "y": 590,
+          "start": 0,
+          "duration": 3.2
+        }
+      ]
+    }
+  ]
+}

@@ -45,7 +45,7 @@ json.dump(reel, open("my-reel.reel.json", "w"), ensure_ascii=False, indent=1)
    If you cannot run code, write the JSON with asset ids (`@hero`) and `src` values like `"assets/hero.jpg"`, and tell the user exactly which file to drop in, or hand them this script to embed it. Keep the final file under the repo's size limit (25 MB unless the repo says otherwise).
 4. **If the user asks for an editable SVG, preserve the artwork—do not redesign it.** For flat illustrations, cartoons, icons, or generated vector-style art, create a careful high-fidelity trace: match the source dimensions/viewBox, composition, silhouette, pose, colors, shapes, outlines, and important small details; use descriptive groups/paths for parts that may be edited or animated. Compare the SVG render against the source and iterate. For a photo or textured artwork, keep the raster embedded for faithful appearance and make only requested overlays editable, unless the user explicitly accepts a stylized trace. See [`IMAGE-TO-SVG-GUIDE.md`](IMAGE-TO-SVG-GUIDE.md).
 
-**Be honest about the trade-off:** wrapping the original raster in SVG preserves its pixels but does not turn them into editable vector shapes; tracing makes paths editable but cannot be guaranteed pixel-identical. In Reelwright, an SVG asset is currently a single editor layer; for parts editable in the app, use separate Reel `path`, `shape`, or `group` layers. The app has no automatic raster-to-vector converter yet. State which treatment you used and any fidelity limits.
+**Be honest about the trade-off:** wrapping the original raster in SVG preserves its pixels but does not turn them into editable vector shapes; tracing makes paths editable but cannot be guaranteed pixel-identical. In Reelwright, an SVG asset may be one editor layer; for app-level editing, use separate Reel `path`, `shape`, `vector`, or nested `group` layers. The browser now offers automatic color quantization and connected-region contour tracing with manual naming/pivot editing and optional vision-model suggestions. Treat these traces as approximate: they may merge small details and cannot perfectly detect parts or fill every occluded region on every doodle. State which treatment you used and any fidelity limits.
 
 ### B. No image was given
 You must create the visuals yourself. Choose per scene:
@@ -69,6 +69,7 @@ Image-generation guidance:
 - **Camera in every scene:** a slow push (zoom 1.0 to 1.08 or 1.15), pan, or settle. Vary direction between scenes.
 - **Staggered reveals:** elements enter 0.15 to 0.25 s apart, in reading order, with ease-out; exits are shorter than entrances. One hero element per scene gets the biggest motion.
 - **Idle life:** something always moves a little (drift, breathing, particles, light sweep) and cycles close cleanly when looped.
+- **Animation craft:** use anticipation, squash/stretch, arcs, stagger, follow-through, secondary motion, and shadows that react to lift or impact. Give heads/hair/hands/feet their own timing; blink and tilt only where character-appropriate. Use negative `scaleY` for a flip when needed and close all loop endpoints cleanly.
 - **Typography:** one display font and one text font from the available list; sentence case; hierarchy of 2 sizes (for example 0.07 and 0.035 of canvas height); max 7 words per line, max 2 lines; keep text inside a 6 percent safe margin and away from faces. Reading time: show each caption at least `0.8 + 0.3 x word count` seconds.
 - **Color:** palette taken from the image or a deliberate 4-color set (background, ink, one accent, one neutral). Check text contrast.
 - **Transitions:** 0.4 to 0.6 s, matching the mood (wipe or slide for energy, fade for calm); never more than two types per reel.
@@ -97,6 +98,7 @@ Image-generation guidance:
 - SVG must be clean: no `<script>`, no event handlers, no external references.
 - No text rendered into generated images; no real-person likenesses; no copyrighted characters; do not change a real person's face or expression.
 - Stay within the repo's limits for duration, layers, scenes and size.
+- For motion, use validated data-only tracks (`prop`, `mode`, `period`, `delay`, `repeat`, `alternate`, optional `window`, `speed`, `wrap`, and keyframes `{t,v,ease}`). Easing includes cubic-bezier strings such as `cubic-bezier(0.2,0.7,0.3,1)`. Never use scripts.
 - Do not output base64 into chat. Save the JSON to a file and share the file.
 
 ## 7. Self-check before delivering (tick every box)

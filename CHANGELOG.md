@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0 — Editable motion, image tracing, and Skate Kid
+
+- Added hierarchical group and vector layers, draggable local pivots, per-segment cubic easing, delayed/windowed/repeating/yoyo tracks, continuous rotation, and wrapped scroll.
+- Added browser-side color quantization and connected-region SVG tracing with manual labels/pivots and optional connected vision-model suggestions; automatic part detection remains approximate.
+- Added complete Reel JSON generation with validator-error retries, animation-direction guidance, offline motion presets, and the existing local command bar.
+- Added editor grouping/ungrouping and a keyframe modal for add/move/delete, easing, loop/yoyo, and window controls; edits participate in undo/redo.
+- Added `samples/skate-kid.reel.json` and three Skate Kid golden frames; the sample preserves the recognizable doodle, rider/stretch/squash hierarchy, ollie/board flip, moving streaks, and seamless 3.2-second loop.
+- Updated authoring prompts and image-to-SVG guidance. Validation: `npm test` and 12 browser PNG golden comparisons pass.
+
 ## 0.2.0 — Reel JSON and modular core
 
 - Moved editor styling and JavaScript out of `index.html` into static CSS and ES modules.

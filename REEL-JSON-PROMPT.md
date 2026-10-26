@@ -46,7 +46,7 @@ Common fields: `id`, `name`, `type`, `x`, `y`, `w`, `h`, `rot`, `scale`, `opacit
 - `caption`: `text`, `style` (`bold-bottom`, `karaoke`), optional `words`.
 - `audio`: `src`, `start`, `duration`, `volume`, `loop`.
 
-Tracks are `{ "prop": "x", "keys": [{ "t": 0, "v": 0, "ease": "inOut" }] }`. Easing names: `linear`, `in`, `out`, `inOut`, `back`, `elastic`, `spring`. Assets are keyed in `assets` and referenced as `@assetId`; supported sources are embedded `data:` URLs or HTTPS URLs.
+Tracks are data-only objects such as `{ "prop": "translateY", "mode": "keyframes", "period": 4, "delay": 0, "repeat": true, "alternate": false, "window": [0.2, 0.8], "keys": [{ "t": 0, "v": 0, "ease": "inOut" }, { "t": 4, "v": 0, "ease": "cubic-bezier(0.2,0.7,0.3,1)" }] }`. Supported properties include `translateX`, `translateY`, `rotate`, `scale`, `scaleX`, `scaleY`, `opacity`, `width`, `height`, and `size`. Modes: `keyframes`, `continuous` (with `speed`), and `scroll` (with `speed` and optional `wrap`). Easing includes `linear`, `in`, `out`, `inOut`, `steps(n)`, and `cubic-bezier(x1,y1,x2,y2)`. Tracks support delays, repeat, yoyo (`alternate`), and cycle windows. Close loop keyframes to the starting pose; negative `scaleY` is allowed for flips. Assets are keyed in `assets` and referenced as `@assetId`; supported sources are embedded `data:` URLs or HTTPS URLs.
 
 Built-in rig IDs: `starter-boy`, `starter-girl`, `cat`, `robot`. Character clip presets: `idle`, `walk`, `run`, `wave`, `jump`, `dance`, `nod`, `turn`.
 
@@ -54,11 +54,12 @@ Built-in rig IDs: `starter-boy`, `starter-girl`, `cat`, `robot`. Character clip 
 
 - Use 1080 × 1920 unless the user requests another format. Keep text inside a 6% safe margin.
 - Give the scene a clear beat: establish, develop, payoff, settle.
+- Direct motion with anticipation, squash/stretch, arcs, staggered timing, follow-through, secondary motion, and responsive shadows. Add blinking/head tilt only when appropriate; avoid synchronized, mechanical movement.
 - Use at most 3 effects per scene. Prefer smooth motion, small amplitudes, trailing parts, and loops that close cleanly.
 - Use only listed rigs, clips, fonts, and shapes; choose safe defaults if unsure.
 - Do not emit JavaScript, procedural code, script tags, event handlers, or external SVG references.
 - For real photos, reference an `@assetId` and use only subtle camera push, parallax, breathing, or particles. Do not alter a real person's face.
-- If a user asks to make supplied or generated art editable as SVG, preserve the source composition and make a careful high-fidelity path/group trace for flat illustrations. An SVG `<image>` containing the original raster looks pixel-identical but is not vector-editable; a vector trace is editable but cannot be guaranteed pixel-identical. For photos/textures, keep the raster and make only overlays editable unless the user accepts a stylized trace. In Reelwright, an SVG asset is one editor layer; use separate Reel `path`, `shape`, or `group` layers for app-level editing. See [`IMAGE-TO-SVG-GUIDE.md`](IMAGE-TO-SVG-GUIDE.md); automatic tracing is not built in.
+- If a user asks to make supplied or generated art editable as SVG, preserve the source composition and make a careful high-fidelity path/group trace for flat illustrations. An SVG `<image>` containing the original raster looks pixel-identical but is not vector-editable; a vector trace is editable but cannot be guaranteed pixel-identical. For photos/textures, keep the raster and make only overlays editable unless the user accepts a stylized trace. In Reelwright, an SVG asset may be one editor layer; use separate Reel `path`, `shape`, `vector`, or nested `group` layers for app-level editing. The browser includes an approximate raster-to-vector trace with editable region labels and pivots; automatic part detection is not perfect and hidden/occluded areas may need manual repair. See [`IMAGE-TO-SVG-GUIDE.md`](IMAGE-TO-SVG-GUIDE.md).
 - Default to 8 seconds if the user does not specify a duration.
 
 ## User request
