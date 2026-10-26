@@ -22,7 +22,7 @@ export function evaluate(project,time=0){
       if(local<(l.start||0))entrance=0;
       else if(l.in?.fx&&local<(l.start||0)+Number(l.in.duration||.5)){const p=clamp((local-(l.start||0))/Number(l.in.duration||.5),0,1);entrance=ease(l.in.ease||'out',p)}
       if(l.out?.fx&&local>(l.start||0)+layerDuration-Number(l.out.duration||.5)){const p=clamp((local-((l.start||0)+layerDuration-Number(l.out.duration||.5)))/Number(l.out.duration||.5),0,1);entrance*=1-ease(l.out.ease||'in',p)}
-      l.alpha=(l.opacity??1)*entrance*parentOpacity;l.scale=l.scale??1;l.scaleX=l.scaleX??l.scale;l.scaleY=l.scaleY??l.scale;
+      l.alpha=(l.opacity??1)*entrance*parentOpacity;l.parentWorldMatrix=parentMatrix;l.scale=l.scale??1;l.scaleX=l.scaleX??l.scale;l.scaleY=l.scaleY??l.scale;
       const localM=localMatrix(l);l.worldMatrix=multiplyMatrix(parentMatrix,localM);l.worldX=l.worldMatrix[4];l.worldY=l.worldMatrix[5];l.worldRot=parentRot+(Number(l.rot)||0);l.worldScaleX=parentScaleX*l.scaleX;l.worldScaleY=parentScaleY*l.scaleY;l.renderTransform=transformFor(l,root?null:parentMatrix);
       l.localTime=local-(l.start||0);l.sceneTime=local;l.progress=progress;l.activeClip=null;
       if(l.type==='character'){const active=(l.clips||[]).filter(c=>local>=(Number(c.t)||0)).at(-1);if(active){l.activeClip=active;const elapsed=Math.max(0,local-(Number(active.t)||0));if(active.loop||active.alternate||active.period){const period=Math.max(.01,Number(active.period||active.duration)||1);let phase=elapsed%period;if(active.alternate&&Math.floor(elapsed/period)%2)phase=period-phase;l.clipTime=phase/(Number(active.speed)||1)}else l.clipTime=elapsed/(Number(active.speed)||1)}}
