@@ -1,0 +1,1830 @@
+{
+  "reelwright": 1,
+  "name": "Mooncat · Star Catch",
+  "canvas": {
+    "w": 560,
+    "h": 600,
+    "fps": 30,
+    "bg": "#232944"
+  },
+  "duration": 4.8,
+  "assets": {},
+  "scenes": [
+    {
+      "name": "Mooncat · Star Catch",
+      "duration": 4.8,
+      "background": {
+        "type": "color",
+        "color": "#232944"
+      },
+      "camera": {
+        "auto": false
+      },
+      "layers": [
+        {
+          "id": "moon",
+          "name": "Honey moon",
+          "type": "shape",
+          "shape": "circle",
+          "x": 458,
+          "y": 111,
+          "w": 76,
+          "h": 76,
+          "fill": "#FFE3A0",
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "moon-cutout",
+          "name": "Moon crescent shadow",
+          "type": "shape",
+          "shape": "circle",
+          "x": 481,
+          "y": 95,
+          "w": 70,
+          "h": 70,
+          "fill": "#232944",
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "cat-title",
+          "name": "Title",
+          "type": "text",
+          "text": "MOONCAT  ·  STAR CATCH",
+          "x": 280,
+          "y": 52,
+          "w": 520,
+          "h": 24,
+          "size": 15,
+          "color": "#F6DDA9",
+          "align": "center",
+          "weight": 750,
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "spark-1",
+          "name": "Twinkling star",
+          "type": "shape",
+          "shape": "star",
+          "x": 72,
+          "y": 102,
+          "w": 18,
+          "h": 18,
+          "fill": "#FFF2C6",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": 1.18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 0.75,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.1,
+                  "v": 1.1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.72,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "spark-2",
+          "name": "Twinkling star",
+          "type": "shape",
+          "shape": "star",
+          "x": 152,
+          "y": 170,
+          "w": 14,
+          "h": 14,
+          "fill": "#FFF2C6",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": 1.18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 0.75,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.1,
+                  "v": 1.1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.72,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "spark-3",
+          "name": "Twinkling star",
+          "type": "shape",
+          "shape": "star",
+          "x": 398,
+          "y": 210,
+          "w": 14,
+          "h": 14,
+          "fill": "#FFF2C6",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": 1.18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 0.75,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.1,
+                  "v": 1.1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.72,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "spark-4",
+          "name": "Twinkling star",
+          "type": "shape",
+          "shape": "star",
+          "x": 475,
+          "y": 292,
+          "w": 20,
+          "h": 20,
+          "fill": "#FFF2C6",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": 1.18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 0.75,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.1,
+                  "v": 1.1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.72,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "spark-5",
+          "name": "Twinkling star",
+          "type": "shape",
+          "shape": "star",
+          "x": 115,
+          "y": 272,
+          "w": 12,
+          "h": 12,
+          "fill": "#FFF2C6",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": 1.18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 0.75,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.1,
+                  "v": 1.1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.72,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "spark-6",
+          "name": "Twinkling star",
+          "type": "shape",
+          "shape": "star",
+          "x": 518,
+          "y": 166,
+          "w": 10,
+          "h": 10,
+          "fill": "#FFF2C6",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": 1.18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 0.75,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.1,
+                  "v": 1.1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.72,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "far-roof",
+          "name": "Distant rooftops",
+          "type": "path",
+          "x": 560,
+          "y": 600,
+          "w": 560,
+          "h": 180,
+          "d": "M-280 5 Q-190 -28 -102 4 L-102 -18 -66 -18 -66 15 2 15 2 -25 42 -25 42 12 112 12 112 -10 152 -10 152 18 216 18 216 -3 280 -3 V120 H-280Z",
+          "fill": "#313958",
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "hill",
+          "name": "Rolling midnight hill",
+          "type": "path",
+          "x": 560,
+          "y": 593,
+          "w": 560,
+          "h": 150,
+          "d": "M-280 -8 Q-175 -52 -74 -20 Q36 26 144 -16 Q214 -43 280 -2 V100 H-280Z",
+          "fill": "#34415E",
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "ground-glow",
+          "name": "Moonlit path",
+          "type": "shape",
+          "shape": "roundRect",
+          "x": 280,
+          "y": 526,
+          "w": 560,
+          "h": 18,
+          "fill": "#667294",
+          "opacity": 0.42,
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "shadow",
+          "name": "Responsive landing shadow",
+          "type": "shape",
+          "shape": "ellipse",
+          "x": 280,
+          "y": 480,
+          "w": 176,
+          "h": 22,
+          "fill": "#171C32",
+          "opacity": 0.5,
+          "tracks": [
+            {
+              "prop": "scaleX",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.72,
+                  "v": 0.96,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.4,
+                  "v": 0.56,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.25,
+                  "v": 0.48,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.12,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.65,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 1,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "opacity",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.58,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.4,
+                  "v": 0.34,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.25,
+                  "v": 0.28,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.65,
+                  "v": 0.58,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0.58,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "falling-star",
+          "name": "Falling star with shimmer",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 393,
+            "y": 243
+          },
+          "children": [
+            {
+              "id": "star-core",
+              "name": "Little captured star",
+              "type": "shape",
+              "shape": "star",
+              "x": 393,
+              "y": 243,
+              "w": 34,
+              "h": 34,
+              "fill": "#FFE07E",
+              "stroke": "#FFF6D8",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 4.8
+            },
+            {
+              "id": "star-glint-a",
+              "name": "Star glint",
+              "type": "shape",
+              "shape": "circle",
+              "x": 384,
+              "y": 231,
+              "w": 5,
+              "h": 5,
+              "fill": "#FFFFFF",
+              "start": 0,
+              "duration": 4.8
+            },
+            {
+              "id": "star-glint-b",
+              "name": "Star glint",
+              "type": "shape",
+              "shape": "circle",
+              "x": 402,
+              "y": 252,
+              "w": 4,
+              "h": 4,
+              "fill": "#FFFFFF",
+              "start": 0,
+              "duration": 4.8
+            },
+            {
+              "id": "star-trail",
+              "name": "Star trail",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 410,
+              "y": 260,
+              "w": 12,
+              "h": 30,
+              "fill": "#F9C96C",
+              "opacity": 0.52,
+              "rot": 28,
+              "start": 0,
+              "duration": 4.8
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "translateY",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": -10,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": 7,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.4,
+                  "v": 25,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.2,
+                  "v": 8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.1,
+                  "v": -4,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.2,
+                  "v": 12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.4,
+                  "v": 28,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.6,
+                  "v": 4,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": -8,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "mooncat",
+          "name": "Mooncat · leap and star catch",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 280,
+            "y": 380
+          },
+          "children": [
+            {
+              "id": "tail",
+              "name": "Curly tail · follow-through",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 210,
+                "y": 360
+              },
+              "children": [
+                {
+                  "id": "tail-shape",
+                  "name": "Ginger tail",
+                  "type": "path",
+                  "x": 228,
+                  "y": 397,
+                  "w": 104,
+                  "h": 94,
+                  "d": "M28 48 C8 26 0 4 14 -17 C28 -37 55 -26 55 -7 C55 5 44 10 36 4",
+                  "fill": "none",
+                  "stroke": "#E8834B",
+                  "strokeWidth": 25,
+                  "strokeLinecap": "round",
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "tail-tip",
+                  "name": "Cream tail tip",
+                  "type": "path",
+                  "x": 228,
+                  "y": 397,
+                  "w": 104,
+                  "h": 94,
+                  "d": "M28 48 C8 26 0 4 14 -17",
+                  "fill": "none",
+                  "stroke": "#FFE0AC",
+                  "strokeWidth": 15,
+                  "strokeLinecap": "round",
+                  "start": 0,
+                  "duration": 4.8
+                }
+              ],
+              "tracks": [
+                {
+                  "prop": "rotate",
+                  "mode": "keyframes",
+                  "period": 4.8,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": -12,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.8,
+                      "v": 7,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.6,
+                      "v": 18,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.5,
+                      "v": 4,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.6,
+                      "v": -14,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.8,
+                      "v": -12,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 4.8
+            },
+            {
+              "id": "body",
+              "name": "Ginger body · squash and stretch",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 375
+              },
+              "children": [
+                {
+                  "id": "torso",
+                  "name": "Ginger torso",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 373,
+                  "w": 144,
+                  "h": 112,
+                  "fill": "#E98C51",
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "belly",
+                  "name": "Cream belly",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 385,
+                  "w": 82,
+                  "h": 74,
+                  "fill": "#FFE5C4",
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "belly-detail",
+                  "name": "Belly fur detail",
+                  "type": "path",
+                  "x": 303,
+                  "y": 403,
+                  "w": 46,
+                  "h": 26,
+                  "d": "M-19 0 Q-8 7 0 0 Q8 7 19 0",
+                  "fill": "none",
+                  "stroke": "#E6B787",
+                  "strokeWidth": 2,
+                  "strokeLinecap": "round",
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "haunch-left",
+                  "name": "Left haunch",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 237,
+                  "y": 407,
+                  "w": 49,
+                  "h": 47,
+                  "fill": "#E98C51",
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "haunch-right",
+                  "name": "Right haunch",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 323,
+                  "y": 407,
+                  "w": 49,
+                  "h": 47,
+                  "fill": "#E98C51",
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "head",
+                  "name": "Cat head · curious tilt",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "pivot": {
+                    "x": 280,
+                    "y": 268
+                  },
+                  "children": [
+                    {
+                      "id": "ear-left",
+                      "name": "Left pointed ear",
+                      "type": "path",
+                      "x": 252,
+                      "y": 261,
+                      "w": 56,
+                      "h": 70,
+                      "d": "M-28 28 L-21 -30 Q-18 -38 -12 -29 L28 23 Z",
+                      "fill": "#E88D53",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "ear-left-inner",
+                      "name": "Left ear inner",
+                      "type": "path",
+                      "x": "22428",
+                      "y": 261,
+                      "w": 56,
+                      "h": 70,
+                      "d": "M-14 16 L-11 -17 Q-10 -21 -6 -16 L17 15 Z",
+                      "fill": "#D86E69",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "ear-right",
+                      "name": "Right pointed ear",
+                      "type": "path",
+                      "x": 364,
+                      "y": 261,
+                      "w": 56,
+                      "h": 70,
+                      "d": "M-28 23 L12 -29 Q18 -38 21 -30 L28 28 Z",
+                      "fill": "#E88D53",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "ear-right-inner",
+                      "name": "Right ear inner",
+                      "type": "path",
+                      "x": 364,
+                      "y": 261,
+                      "w": 56,
+                      "h": 70,
+                      "d": "M-17 15 L6 -16 Q10 -21 11 -17 L14 16 Z",
+                      "fill": "#D86E69",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "face",
+                      "name": "Peach cat face",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 280,
+                      "y": 268,
+                      "w": 142,
+                      "h": 118,
+                      "fill": "#F3A568",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "cheek-left",
+                      "name": "Soft cheek",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 246,
+                      "y": 293,
+                      "w": 31,
+                      "h": 22,
+                      "fill": "#F5B887",
+                      "opacity": 0.8,
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "cheek-right",
+                      "name": "Soft cheek",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 314,
+                      "y": 293,
+                      "w": 31,
+                      "h": 22,
+                      "fill": "#F5B887",
+                      "opacity": 0.8,
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "eye-left",
+                      "name": "Left eye · blink",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "pivot": {
+                        "x": 254,
+                        "y": 263
+                      },
+                      "children": [
+                        {
+                          "id": "eye-left-white",
+                          "name": "Eye white",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 254,
+                          "y": 263,
+                          "w": 23,
+                          "h": 31,
+                          "fill": "#FFF8E8",
+                          "start": 0,
+                          "duration": 4.8
+                        },
+                        {
+                          "id": "eye-left-pupil",
+                          "name": "Amber iris",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 256,
+                          "y": 267,
+                          "w": 12,
+                          "h": 20,
+                          "fill": "#30405A",
+                          "start": 0,
+                          "duration": 4.8
+                        },
+                        {
+                          "id": "eye-left-shine",
+                          "name": "Eye glint",
+                          "type": "shape",
+                          "shape": "circle",
+                          "x": 259,
+                          "y": 260,
+                          "w": 5,
+                          "h": 5,
+                          "fill": "#FFFFFF",
+                          "start": 0,
+                          "duration": 4.8
+                        }
+                      ],
+                      "tracks": [
+                        {
+                          "prop": "scaleY",
+                          "mode": "keyframes",
+                          "period": 4.8,
+                          "delay": 0,
+                          "repeat": true,
+                          "alternate": false,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.65,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.74,
+                              "v": 0.08,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.84,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.05,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.14,
+                              "v": 0.1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.24,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.8,
+                              "v": 1,
+                              "ease": "inOut"
+                            }
+                          ]
+                        }
+                      ],
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "eye-right",
+                      "name": "Right eye · blink",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "pivot": {
+                        "x": 306,
+                        "y": 263
+                      },
+                      "children": [
+                        {
+                          "id": "eye-right-white",
+                          "name": "Eye white",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 306,
+                          "y": 263,
+                          "w": 23,
+                          "h": 31,
+                          "fill": "#FFF8E8",
+                          "start": 0,
+                          "duration": 4.8
+                        },
+                        {
+                          "id": "eye-right-pupil",
+                          "name": "Amber iris",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 308,
+                          "y": 267,
+                          "w": 12,
+                          "h": 20,
+                          "fill": "#30405A",
+                          "start": 0,
+                          "duration": 4.8
+                        },
+                        {
+                          "id": "eye-right-shine",
+                          "name": "Eye glint",
+                          "type": "shape",
+                          "shape": "circle",
+                          "x": 311,
+                          "y": 260,
+                          "w": 5,
+                          "h": 5,
+                          "fill": "#FFFFFF",
+                          "start": 0,
+                          "duration": 4.8
+                        }
+                      ],
+                      "tracks": [
+                        {
+                          "prop": "scaleY",
+                          "mode": "keyframes",
+                          "period": 4.8,
+                          "delay": 0,
+                          "repeat": true,
+                          "alternate": false,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.67,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.76,
+                              "v": 0.08,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.86,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.07,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.16,
+                              "v": 0.1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.26,
+                              "v": 1,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.8,
+                              "v": 1,
+                              "ease": "inOut"
+                            }
+                          ]
+                        }
+                      ],
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "muzzle-left",
+                      "name": "Cream muzzle",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 271,
+                      "y": 294,
+                      "w": 29,
+                      "h": 22,
+                      "fill": "#FFF0D6",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "muzzle-right",
+                      "name": "Cream muzzle",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 290,
+                      "y": 294,
+                      "w": 29,
+                      "h": 22,
+                      "fill": "#FFF0D6",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "nose",
+                      "name": "Tiny pink nose",
+                      "type": "path",
+                      "x": 287,
+                      "y": 294,
+                      "w": 14,
+                      "h": 10,
+                      "d": "M-7 -3 Q0 -10 7 -3 L0 5 Z",
+                      "fill": "#D66B75",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "smile",
+                      "name": "Cat smile",
+                      "type": "path",
+                      "x": 297,
+                      "y": 314.5,
+                      "w": 34,
+                      "h": 19,
+                      "d": "M0 -4 Q-2 7 -13 7 M0 -4 Q2 7 13 7",
+                      "fill": "none",
+                      "stroke": "#74494D",
+                      "strokeWidth": 2.5,
+                      "strokeLinecap": "round",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "whiskers-left",
+                      "name": "Left whiskers",
+                      "type": "path",
+                      "x": 259,
+                      "y": 306,
+                      "w": 48,
+                      "h": 28,
+                      "d": "M20 -3 L-23 -12 M20 4 L-26 4 M20 10 L-20 15",
+                      "fill": "none",
+                      "stroke": "#FFF3DC",
+                      "strokeWidth": 2,
+                      "strokeLinecap": "round",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "whiskers-right",
+                      "name": "Right whiskers",
+                      "type": "path",
+                      "x": 349,
+                      "y": 306,
+                      "w": 48,
+                      "h": 28,
+                      "d": "M-20 -3 L23 -12 M-20 4 L26 4 M-20 10 L20 15",
+                      "fill": "none",
+                      "stroke": "#FFF3DC",
+                      "strokeWidth": 2,
+                      "strokeLinecap": "round",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "brow-left",
+                      "name": "Left brow",
+                      "type": "path",
+                      "x": 268,
+                      "y": 247,
+                      "w": 28,
+                      "h": 10,
+                      "d": "M-12 3 Q0 -5 12 2",
+                      "fill": "none",
+                      "stroke": "#A95449",
+                      "strokeWidth": 3,
+                      "strokeLinecap": "round",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "brow-right",
+                      "name": "Right brow",
+                      "type": "path",
+                      "x": 320,
+                      "y": 247,
+                      "w": 28,
+                      "h": 10,
+                      "d": "M-12 2 Q0 -5 12 3",
+                      "fill": "none",
+                      "stroke": "#A95449",
+                      "strokeWidth": 3,
+                      "strokeLinecap": "round",
+                      "start": 0,
+                      "duration": 4.8
+                    }
+                  ],
+                  "tracks": [
+                    {
+                      "prop": "rotate",
+                      "mode": "keyframes",
+                      "period": 4.8,
+                      "delay": 0,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": -1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 0.8,
+                          "v": -3,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 1.6,
+                          "v": 4,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.45,
+                          "v": 7,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 3.2,
+                          "v": 2,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.1,
+                          "v": -2,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.8,
+                          "v": -1,
+                          "ease": "inOut"
+                        }
+                      ]
+                    }
+                  ],
+                  "start": 0,
+                  "duration": 4.8
+                },
+                {
+                  "id": "paws",
+                  "name": "Paws · reaching for the star",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "pivot": {
+                    "x": 0,
+                    "y": 0
+                  },
+                  "children": [
+                    {
+                      "id": "paw-left",
+                      "name": "Left reaching paw",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "pivot": {
+                        "x": 240,
+                        "y": 410
+                      },
+                      "children": [
+                        {
+                          "id": "paw-left-leg",
+                          "name": "Front leg",
+                          "type": "shape",
+                          "shape": "roundRect",
+                          "x": 240,
+                          "y": 405,
+                          "w": 34,
+                          "h": 78,
+                          "fill": "#E88D53",
+                          "start": 0,
+                          "duration": 4.8
+                        },
+                        {
+                          "id": "paw-left-mitten",
+                          "name": "Cream paw",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 240,
+                          "y": 430,
+                          "w": 43,
+                          "h": 27,
+                          "fill": "#FFE2BB",
+                          "start": 0,
+                          "duration": 4.8
+                        }
+                      ],
+                      "tracks": [
+                        {
+                          "prop": "rotate",
+                          "mode": "keyframes",
+                          "period": 4.8,
+                          "delay": 0,
+                          "repeat": true,
+                          "alternate": false,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": 5,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.2,
+                              "v": -22,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 2.1,
+                              "v": -34,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 2.8,
+                              "v": -18,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 3.6,
+                              "v": 8,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.8,
+                              "v": 5,
+                              "ease": "inOut"
+                            }
+                          ]
+                        }
+                      ],
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "paw-right",
+                      "name": "Right reaching paw",
+                      "type": "group",
+                      "x": 0,
+                      "y": 0,
+                      "pivot": {
+                        "x": 320,
+                        "y": 410
+                      },
+                      "children": [
+                        {
+                          "id": "paw-right-leg",
+                          "name": "Front leg",
+                          "type": "shape",
+                          "shape": "roundRect",
+                          "x": 320,
+                          "y": 405,
+                          "w": 34,
+                          "h": 78,
+                          "fill": "#E88D53",
+                          "start": 0,
+                          "duration": 4.8
+                        },
+                        {
+                          "id": "paw-right-mitten",
+                          "name": "Cream paw",
+                          "type": "shape",
+                          "shape": "ellipse",
+                          "x": 320,
+                          "y": 430,
+                          "w": 43,
+                          "h": 27,
+                          "fill": "#FFE2BB",
+                          "start": 0,
+                          "duration": 4.8
+                        }
+                      ],
+                      "tracks": [
+                        {
+                          "prop": "rotate",
+                          "mode": "keyframes",
+                          "period": 4.8,
+                          "delay": 0,
+                          "repeat": true,
+                          "alternate": false,
+                          "keys": [
+                            {
+                              "t": 0,
+                              "v": -5,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 1.2,
+                              "v": 18,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 2.1,
+                              "v": 28,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 2.8,
+                              "v": 12,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 3.6,
+                              "v": -8,
+                              "ease": "inOut"
+                            },
+                            {
+                              "t": 4.8,
+                              "v": -5,
+                              "ease": "inOut"
+                            }
+                          ]
+                        }
+                      ],
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "hind-leg-left",
+                      "name": "Left hind leg",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 241,
+                      "y": 430,
+                      "w": 52,
+                      "h": 34,
+                      "fill": "#D8764D",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "hind-leg-right",
+                      "name": "Right hind leg",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 317,
+                      "y": 430,
+                      "w": 52,
+                      "h": 34,
+                      "fill": "#D8764D",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "toe-left",
+                      "name": "Left paw toes",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 231,
+                      "y": 437,
+                      "w": 8,
+                      "h": 6,
+                      "fill": "#FFF1DC",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "toe-mid-left",
+                      "name": "Paw toes",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 241,
+                      "y": 438,
+                      "w": 8,
+                      "h": 6,
+                      "fill": "#FFF1DC",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "toe-right",
+                      "name": "Right paw toes",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 311,
+                      "y": 438,
+                      "w": 8,
+                      "h": 6,
+                      "fill": "#FFF1DC",
+                      "start": 0,
+                      "duration": 4.8
+                    },
+                    {
+                      "id": "toe-mid-right",
+                      "name": "Paw toes",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 321,
+                      "y": 438,
+                      "w": 8,
+                      "h": 6,
+                      "fill": "#FFF1DC",
+                      "start": 0,
+                      "duration": 4.8
+                    }
+                  ],
+                  "start": 0,
+                  "duration": 4.8
+                }
+              ],
+              "tracks": [
+                {
+                  "prop": "scaleY",
+                  "mode": "keyframes",
+                  "period": 4.8,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.65,
+                      "v": 0.9,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1,
+                      "v": 1.13,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.45,
+                      "v": 1.03,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.15,
+                      "v": 0.97,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.9,
+                      "v": 1.08,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.4,
+                      "v": 0.92,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.8,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.8,
+                      "v": 1,
+                      "ease": "inOut"
+                    }
+                  ]
+                },
+                {
+                  "prop": "scaleX",
+                  "mode": "keyframes",
+                  "period": 4.8,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.65,
+                      "v": 1.1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1,
+                      "v": 0.93,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.45,
+                      "v": 0.98,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.15,
+                      "v": 1.02,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.9,
+                      "v": 0.96,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.4,
+                      "v": 1.08,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.8,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.8,
+                      "v": 1,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 4.8
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "translateY",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.6,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.88,
+                  "v": 18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.18,
+                  "v": -18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.65,
+                  "v": -95,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.15,
+                  "v": -112,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.5,
+                  "v": -80,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.05,
+                  "v": -18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.48,
+                  "v": 3,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.8,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 4.8,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.9,
+                  "v": -2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": -3,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.1,
+                  "v": 2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.7,
+                  "v": 4,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.4,
+                  "v": -1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": 0,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 4.8
+        },
+        {
+          "id": "cat-caption",
+          "name": "Caption",
+          "type": "text",
+          "text": "CATCH A LITTLE MAGIC",
+          "x": 280,
+          "y": 570,
+          "w": 520,
+          "h": 22.400000000000002,
+          "size": 14,
+          "color": "#F4E8C7",
+          "align": "center",
+          "weight": 650,
+          "start": 0,
+          "duration": 4.8
+        }
+      ]
+    }
+  ]
+}

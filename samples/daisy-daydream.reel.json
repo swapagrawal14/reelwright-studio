@@ -1,0 +1,1660 @@
+{
+  "reelwright": 1,
+  "name": "Daisy Daydream · Bloom & Flutter",
+  "canvas": {
+    "w": 560,
+    "h": 600,
+    "fps": 30,
+    "bg": "#DDF1E5"
+  },
+  "duration": 6,
+  "assets": {},
+  "scenes": [
+    {
+      "name": "Daisy Daydream · Bloom & Flutter",
+      "duration": 6,
+      "background": {
+        "type": "color",
+        "color": "#DDF1E5"
+      },
+      "camera": {
+        "auto": false
+      },
+      "layers": [
+        {
+          "id": "sun",
+          "name": "Soft morning sun",
+          "type": "shape",
+          "shape": "circle",
+          "x": 454,
+          "y": 124,
+          "w": 88,
+          "h": 88,
+          "fill": "#FFD47C",
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "dew-a",
+          "name": "Floating dew sparkle",
+          "type": "shape",
+          "shape": "star",
+          "x": 117,
+          "y": 200,
+          "w": 8,
+          "h": 8,
+          "fill": "#FFFDF3",
+          "opacity": 0.8,
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 1.15,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": 1.12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": 0.8,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "dew-b",
+          "name": "Floating dew sparkle",
+          "type": "shape",
+          "shape": "star",
+          "x": 147,
+          "y": 150,
+          "w": 6,
+          "h": 6,
+          "fill": "#FFFDF3",
+          "opacity": 0.8,
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 1.15,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": 1.12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": 0.8,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "dew-c",
+          "name": "Floating dew sparkle",
+          "type": "shape",
+          "shape": "star",
+          "x": 425,
+          "y": 246,
+          "w": 6,
+          "h": 6,
+          "fill": "#FFFDF3",
+          "opacity": 0.8,
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 1.15,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": 1.12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": 0.8,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "dew-d",
+          "name": "Floating dew sparkle",
+          "type": "shape",
+          "shape": "star",
+          "x": 94,
+          "y": 330,
+          "w": 7,
+          "h": 7,
+          "fill": "#FFFDF3",
+          "opacity": 0.8,
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 1.15,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": 1.12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": 0.8,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "flower-title",
+          "name": "Title",
+          "type": "text",
+          "text": "DAISY  ·  DAYDREAM",
+          "x": 280,
+          "y": 58,
+          "w": 520,
+          "h": 24,
+          "size": 15,
+          "color": "#47766A",
+          "align": "center",
+          "weight": 750,
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "back-meadow",
+          "name": "Far meadow",
+          "type": "path",
+          "x": 560,
+          "y": 600,
+          "w": 560,
+          "h": 200,
+          "d": "M-280 4 Q-174 -42 -72 -8 Q39 27 145 -14 Q220 -43 280 -6 V110 H-280Z",
+          "fill": "#B7D8A1",
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "front-meadow",
+          "name": "Front meadow",
+          "type": "path",
+          "x": 560,
+          "y": 606,
+          "w": 560,
+          "h": 140,
+          "d": "M-280 -8 Q-180 -42 -85 -10 Q0 20 83 -8 Q185 -44 280 -5 V80 H-280Z",
+          "fill": "#83B98F",
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "soil",
+          "name": "Little patch of earth",
+          "type": "shape",
+          "shape": "ellipse",
+          "x": 280,
+          "y": 520,
+          "w": 126,
+          "h": 18,
+          "fill": "#628B6B",
+          "opacity": 0.45,
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "stem",
+          "name": "Spring-green stem",
+          "type": "shape",
+          "shape": "roundRect",
+          "x": 280,
+          "y": 416,
+          "w": 19,
+          "h": 202,
+          "fill": "#5EA77D",
+          "rot": -1,
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "leaves",
+          "name": "Leaves · gentle breeze",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 280,
+            "y": 430
+          },
+          "children": [
+            {
+              "id": "leaf-left",
+              "name": "Left leaf",
+              "type": "path",
+              "x": 289,
+              "y": 461,
+              "w": 100,
+              "h": 56,
+              "d": "M-47 10 Q-21 -36 47 -18 Q30 30 -47 10 Z",
+              "fill": "#65B77D",
+              "stroke": "#3E8C68",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "leaf-left-vein",
+              "name": "Leaf vein",
+              "type": "path",
+              "x": 281,
+              "y": 453,
+              "w": 84,
+              "h": 40,
+              "d": "M-36 8 Q-4 2 33 -13",
+              "fill": "none",
+              "stroke": "#D2EAC0",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "leaf-right",
+              "name": "Right leaf",
+              "type": "path",
+              "x": 371,
+              "y": 421,
+              "w": 100,
+              "h": 56,
+              "d": "M47 11 Q18 -37 -47 -17 Q-27 30 47 11 Z",
+              "fill": "#75C587",
+              "stroke": "#3E8C68",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "leaf-right-vein",
+              "name": "Leaf vein",
+              "type": "path",
+              "x": 363,
+              "y": 413,
+              "w": 84,
+              "h": 40,
+              "d": "M36 7 Q2 1 -34 -13",
+              "fill": "none",
+              "stroke": "#D2EAC0",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 3,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": -4,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": -2,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "bloom",
+          "name": "Daisy bloom · staggered petals",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 280,
+            "y": 300
+          },
+          "children": [
+            {
+              "id": "petal-1",
+              "name": "Petal 1",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-1",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFFDF4",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 0,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-2",
+              "name": "Petal 2",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-2",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFF8E7",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 45,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.035,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-3",
+              "name": "Petal 3",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-3",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFFFFF",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 90,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.07,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-4",
+              "name": "Petal 4",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-4",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFF4D7",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 135,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.10500000000000001,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-5",
+              "name": "Petal 5",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-5",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFFFFF",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 180,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.14,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-6",
+              "name": "Petal 6",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-6",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFF9E8",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 225,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.17500000000000002,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-7",
+              "name": "Petal 7",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-7",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFFDF4",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 270,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.21000000000000002,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "petal-8",
+              "name": "Petal 8",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 300
+              },
+              "children": [
+                {
+                  "id": "petal-shape-8",
+                  "name": "Ivory petal",
+                  "type": "shape",
+                  "shape": "ellipse",
+                  "x": 280,
+                  "y": 236,
+                  "w": 43,
+                  "h": 88,
+                  "fill": "#FFF5DF",
+                  "stroke": "#E9D9AE",
+                  "strokeWidth": 1.4,
+                  "start": 0,
+                  "duration": 6
+                }
+              ],
+              "rot": 315,
+              "scale": 0.32,
+              "tracks": [
+                {
+                  "prop": "scale",
+                  "mode": "keyframes",
+                  "period": 6,
+                  "delay": 0.24500000000000002,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.45,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 0.68,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.75,
+                      "v": 0.34,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 6,
+                      "v": 0.3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "flower-center",
+              "name": "Golden flower center",
+              "type": "shape",
+              "shape": "circle",
+              "x": 280,
+              "y": 300,
+              "w": 70,
+              "h": 70,
+              "fill": "#F5BE58",
+              "stroke": "#D89A42",
+              "strokeWidth": 3,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "flower-center-highlight",
+              "name": "Center highlight",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 267,
+              "y": 286,
+              "w": 19,
+              "h": 10,
+              "fill": "#FFE59A",
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-1",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "circle",
+              "x": 252,
+              "y": 280,
+              "w": 4,
+              "h": 4,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-2",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 269,
+              "y": 303,
+              "w": 5,
+              "h": 5,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-3",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 286,
+              "y": 285,
+              "w": 6,
+              "h": 6,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-4",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "circle",
+              "x": 303,
+              "y": 308,
+              "w": 4,
+              "h": 4,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-5",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 263,
+              "y": 290,
+              "w": 5,
+              "h": 5,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-6",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 280,
+              "y": 313,
+              "w": 6,
+              "h": 6,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-7",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "circle",
+              "x": 297,
+              "y": 295,
+              "w": 4,
+              "h": 4,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-8",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 257,
+              "y": 318,
+              "w": 5,
+              "h": 5,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-9",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 274,
+              "y": 300,
+              "w": 6,
+              "h": 6,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-10",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "circle",
+              "x": 291,
+              "y": 282,
+              "w": 4,
+              "h": 4,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "pollen-11",
+              "name": "Pollen speckle",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 308,
+              "y": 305,
+              "w": 5,
+              "h": 5,
+              "fill": "#D88E3E",
+              "opacity": 0.78,
+              "start": 0,
+              "duration": 6
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": -1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": -2,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "bee",
+          "name": "Bumblebee · looping flight arc",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 280,
+            "y": 230
+          },
+          "children": [
+            {
+              "id": "bee-wing-left",
+              "name": "Translucent wing",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 267,
+              "y": 214,
+              "w": 25,
+              "h": 34,
+              "fill": "#EAFBFF",
+              "opacity": 0.8,
+              "rot": -24,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-wing-right",
+              "name": "Translucent wing",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 292,
+              "y": 213,
+              "w": 25,
+              "h": 34,
+              "fill": "#EAFBFF",
+              "opacity": 0.8,
+              "rot": 24,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-body",
+              "name": "Golden bee",
+              "type": "shape",
+              "shape": "ellipse",
+              "x": 280,
+              "y": 230,
+              "w": 42,
+              "h": 29,
+              "fill": "#F2B74E",
+              "stroke": "#D38B36",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-stripe-a",
+              "name": "Bee stripe",
+              "type": "path",
+              "x": 277,
+              "y": 243.5,
+              "w": 6,
+              "h": 27,
+              "d": "M0 -13 V13",
+              "fill": "none",
+              "stroke": "#725142",
+              "strokeWidth": 4,
+              "strokeLinecap": "round",
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-stripe-b",
+              "name": "Bee stripe",
+              "type": "path",
+              "x": 289,
+              "y": 243.5,
+              "w": 6,
+              "h": 27,
+              "d": "M0 -13 V13",
+              "fill": "none",
+              "stroke": "#725142",
+              "strokeWidth": 4,
+              "strokeLinecap": "round",
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-eye",
+              "name": "Bee eye",
+              "type": "shape",
+              "shape": "circle",
+              "x": 296,
+              "y": 225,
+              "w": 5,
+              "h": 5,
+              "fill": "#513D3D",
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-antenna-left",
+              "name": "Bee antenna",
+              "type": "path",
+              "x": 277,
+              "y": 218.5,
+              "w": 14,
+              "h": 17,
+              "d": "M5 10 Q0 1 -5 -5",
+              "fill": "none",
+              "stroke": "#6E5140",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            },
+            {
+              "id": "bee-antenna-right",
+              "name": "Bee antenna",
+              "type": "path",
+              "x": 294,
+              "y": 218.5,
+              "w": 14,
+              "h": 17,
+              "d": "M-5 10 Q0 1 5 -5",
+              "fill": "none",
+              "stroke": "#6E5140",
+              "strokeWidth": 2,
+              "start": 0,
+              "duration": 6
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "translateX",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 78,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1,
+                  "v": 10,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2,
+                  "v": -70,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": -24,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4,
+                  "v": 60,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5,
+                  "v": 32,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": 78,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "translateY",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -24,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.8,
+                  "v": -90,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.8,
+                  "v": -80,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.8,
+                  "v": -18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.8,
+                  "v": -57,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": -100,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": -24,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.2,
+                  "v": 8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.4,
+                  "v": -8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.6,
+                  "v": 14,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.8,
+                  "v": -6,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": -12,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "butterfly",
+          "name": "Tiny fluttering companion",
+          "type": "shape",
+          "shape": "star",
+          "x": 386,
+          "y": 340,
+          "w": 19,
+          "h": 19,
+          "fill": "#F3A984",
+          "tracks": [
+            {
+              "prop": "translateY",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": -14,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": -12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": 0,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 6,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 22,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3,
+                  "v": -12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.5,
+                  "v": 20,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 6,
+                  "v": -18,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 6
+        },
+        {
+          "id": "flower-caption",
+          "name": "Caption",
+          "type": "text",
+          "text": "GROW AT YOUR OWN PACE",
+          "x": 280,
+          "y": 570,
+          "w": 520,
+          "h": 22.400000000000002,
+          "size": 14,
+          "color": "#F5F1D7",
+          "align": "center",
+          "weight": 650,
+          "start": 0,
+          "duration": 6
+        }
+      ]
+    }
+  ]
+}

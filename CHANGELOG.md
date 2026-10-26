@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 — Three new animated gallery samples
+
+- Added Mooncat · Star Catch (4.8s), Pocket Bot · A Big Hello (5.2s), and Daisy Daydream · Bloom & Flutter (6s) as original, named, editable vector-layer reels.
+- Crafted motion with anticipation, follow-through, staggered parts, blinking, a responsive shadow, antenna lag, a bee flight arc, and closed loop boundaries.
+- Added all three to the sample gallery, three-start/mid/end golden frame coverage, and clean-validation/loop tests.
+
 ## 0.4.0 — Import HTML animations
 
 - Added a dedicated HTML upload button and project-menu action; self-contained inline SVG markup becomes editable paths/text/groups, and CSS keyframe transforms map to Reel tracks.

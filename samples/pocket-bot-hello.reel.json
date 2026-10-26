@@ -1,0 +1,1234 @@
+{
+  "reelwright": 1,
+  "name": "Pocket Bot · A Big Hello",
+  "canvas": {
+    "w": 560,
+    "h": 600,
+    "fps": 30,
+    "bg": "#E7F3EE"
+  },
+  "duration": 5.2,
+  "assets": {},
+  "scenes": [
+    {
+      "name": "Pocket Bot · A Big Hello",
+      "duration": 5.2,
+      "background": {
+        "type": "color",
+        "color": "#E7F3EE"
+      },
+      "camera": {
+        "auto": false
+      },
+      "layers": [
+        {
+          "id": "bot-backdrop",
+          "name": "Mint spotlight",
+          "type": "shape",
+          "shape": "ellipse",
+          "x": 280,
+          "y": 290,
+          "w": 350,
+          "h": 350,
+          "fill": "#D2F2E9",
+          "opacity": 0.65,
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "bot-spark-a",
+          "name": "Orbit spark",
+          "type": "shape",
+          "shape": "star",
+          "x": 123,
+          "y": 198,
+          "w": 20,
+          "h": 20,
+          "fill": "#FFCB71",
+          "tracks": [
+            {
+              "prop": "rotate",
+              "mode": "keyframes",
+              "period": 5.2,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": -8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.6,
+                  "v": 12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5.2,
+                  "v": -8,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "bot-spark-b",
+          "name": "Orbit spark",
+          "type": "shape",
+          "shape": "star",
+          "x": 444,
+          "y": 310,
+          "w": 15,
+          "h": 15,
+          "fill": "#80D8CE",
+          "tracks": [
+            {
+              "prop": "scale",
+              "mode": "keyframes",
+              "period": 5.2,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.65,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.3,
+                  "v": 1.15,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.6,
+                  "v": 0.65,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.9,
+                  "v": 1.12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5.2,
+                  "v": 0.65,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "bot-title",
+          "name": "Title",
+          "type": "text",
+          "text": "POCKET BOT  ·  HELLO, HUMAN!",
+          "x": 280,
+          "y": 58,
+          "w": 520,
+          "h": 24,
+          "size": 15,
+          "color": "#276B69",
+          "align": "center",
+          "weight": 750,
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "bot-platform",
+          "name": "Soft stage",
+          "type": "shape",
+          "shape": "roundRect",
+          "x": 280,
+          "y": 498,
+          "w": 264,
+          "h": 34,
+          "fill": "#B6DED3",
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "bot-shadow",
+          "name": "Hover shadow",
+          "type": "shape",
+          "shape": "ellipse",
+          "x": 280,
+          "y": 476,
+          "w": 146,
+          "h": 20,
+          "fill": "#4C8E84",
+          "opacity": 0.28,
+          "tracks": [
+            {
+              "prop": "scaleX",
+              "mode": "keyframes",
+              "period": 5.2,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 1,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.2,
+                  "v": 0.8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.6,
+                  "v": 0.72,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.8,
+                  "v": 0.85,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5.2,
+                  "v": 1,
+                  "ease": "inOut"
+                }
+              ]
+            },
+            {
+              "prop": "opacity",
+              "mode": "keyframes",
+              "period": 5.2,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0.32,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.5,
+                  "v": 0.23,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.7,
+                  "v": 0.2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4,
+                  "v": 0.27,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5.2,
+                  "v": 0.32,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "pocket-bot",
+          "name": "Pocket Bot · big hello",
+          "type": "group",
+          "x": 0,
+          "y": 0,
+          "pivot": {
+            "x": 280,
+            "y": 365
+          },
+          "children": [
+            {
+              "id": "antenna",
+              "name": "Antenna · delayed bob",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 174
+              },
+              "children": [
+                {
+                  "id": "antenna-stem",
+                  "name": "Antenna stem",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 280,
+                  "y": 165,
+                  "w": 9,
+                  "h": 42,
+                  "fill": "#667B87",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "antenna-cap",
+                  "name": "Glow antenna cap",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 280,
+                  "y": 139,
+                  "w": 26,
+                  "h": 26,
+                  "fill": "#FFCF6E",
+                  "stroke": "#FFF1C9",
+                  "strokeWidth": 3,
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "antenna-glow",
+                  "name": "Antenna center",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 280,
+                  "y": 139,
+                  "w": 9,
+                  "h": 9,
+                  "fill": "#FFF8DA",
+                  "start": 0,
+                  "duration": 5.2
+                }
+              ],
+              "tracks": [
+                {
+                  "prop": "rotate",
+                  "mode": "keyframes",
+                  "period": 5.2,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": -3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.3,
+                      "v": 5,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.6,
+                      "v": -4,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.9,
+                      "v": 3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": -3,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 5.2
+            },
+            {
+              "id": "bot-head",
+              "name": "Expressive display head",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 245
+              },
+              "children": [
+                {
+                  "id": "head-shell",
+                  "name": "Rounded pearl head",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 280,
+                  "y": 245,
+                  "w": 170,
+                  "h": 128,
+                  "fill": "#F6F2E8",
+                  "stroke": "#76939A",
+                  "strokeWidth": 4,
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "ear-left",
+                  "name": "Left audio port",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 190,
+                  "y": 244,
+                  "w": 22,
+                  "h": 48,
+                  "fill": "#75BDB1",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "ear-right",
+                  "name": "Right audio port",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 370,
+                  "y": 244,
+                  "w": 22,
+                  "h": 48,
+                  "fill": "#75BDB1",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "visor",
+                  "name": "Deep teal display",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 280,
+                  "y": 241,
+                  "w": 136,
+                  "h": 70,
+                  "fill": "#284C58",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "eye-left",
+                  "name": "Left LED eye",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "pivot": {
+                    "x": 253,
+                    "y": 239
+                  },
+                  "children": [
+                    {
+                      "id": "eye-left-led",
+                      "name": "Aqua eye",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 253,
+                      "y": 239,
+                      "w": 17,
+                      "h": 22,
+                      "fill": "#8EF2DB",
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "eye-left-glint",
+                      "name": "Eye glint",
+                      "type": "shape",
+                      "shape": "circle",
+                      "x": 258,
+                      "y": 234,
+                      "w": 5,
+                      "h": 5,
+                      "fill": "#FFFFFF",
+                      "start": 0,
+                      "duration": 5.2
+                    }
+                  ],
+                  "tracks": [
+                    {
+                      "prop": "scaleY",
+                      "mode": "keyframes",
+                      "period": 5.2,
+                      "delay": 0,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.03,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.11,
+                          "v": 0.08,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.2,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.32,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.4,
+                          "v": 0.1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.5,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 5.2,
+                          "v": 1,
+                          "ease": "inOut"
+                        }
+                      ]
+                    }
+                  ],
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "eye-right",
+                  "name": "Right LED eye",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "pivot": {
+                    "x": 307,
+                    "y": 239
+                  },
+                  "children": [
+                    {
+                      "id": "eye-right-led",
+                      "name": "Aqua eye",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 307,
+                      "y": 239,
+                      "w": 17,
+                      "h": 22,
+                      "fill": "#8EF2DB",
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "eye-right-glint",
+                      "name": "Eye glint",
+                      "type": "shape",
+                      "shape": "circle",
+                      "x": 312,
+                      "y": 234,
+                      "w": 5,
+                      "h": 5,
+                      "fill": "#FFFFFF",
+                      "start": 0,
+                      "duration": 5.2
+                    }
+                  ],
+                  "tracks": [
+                    {
+                      "prop": "scaleY",
+                      "mode": "keyframes",
+                      "period": 5.2,
+                      "delay": 0,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.05,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.13,
+                          "v": 0.08,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.22,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.34,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.42,
+                          "v": 0.1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 4.52,
+                          "v": 1,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 5.2,
+                          "v": 1,
+                          "ease": "inOut"
+                        }
+                      ]
+                    }
+                  ],
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "cheek-left",
+                  "name": "Status light",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 223,
+                  "y": 281,
+                  "w": 8,
+                  "h": 8,
+                  "fill": "#FFB76B",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "cheek-right",
+                  "name": "Status light",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 337,
+                  "y": 281,
+                  "w": 8,
+                  "h": 8,
+                  "fill": "#FFB76B",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "bot-smile",
+                  "name": "Pixel smile",
+                  "type": "path",
+                  "x": 295,
+                  "y": 284,
+                  "w": 30,
+                  "h": 12,
+                  "d": "M-12 0 H12",
+                  "fill": "none",
+                  "stroke": "#8EF2DB",
+                  "strokeWidth": 3,
+                  "strokeLinecap": "round",
+                  "start": 0,
+                  "duration": 5.2
+                }
+              ],
+              "tracks": [
+                {
+                  "prop": "rotate",
+                  "mode": "keyframes",
+                  "period": 5.2,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": -1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.1,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.2,
+                      "v": 3,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.2,
+                      "v": -2,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 4.2,
+                      "v": -1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": -1,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 5.2
+            },
+            {
+              "id": "bot-body",
+              "name": "Compact shell and controls",
+              "type": "group",
+              "x": 0,
+              "y": 0,
+              "pivot": {
+                "x": 280,
+                "y": 384
+              },
+              "children": [
+                {
+                  "id": "torso",
+                  "name": "Rounded robot torso",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 280,
+                  "y": 382,
+                  "w": 144,
+                  "h": 116,
+                  "fill": "#F6F2E8",
+                  "stroke": "#76939A",
+                  "strokeWidth": 4,
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "chest-panel",
+                  "name": "Chest control panel",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 280,
+                  "y": 374,
+                  "w": 92,
+                  "h": 47,
+                  "fill": "#DCEBE5",
+                  "stroke": "#B2CDC4",
+                  "strokeWidth": 2,
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "chest-led-a",
+                  "name": "Green indicator",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 256,
+                  "y": 374,
+                  "w": 10,
+                  "h": 10,
+                  "fill": "#61C5A9",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "chest-led-b",
+                  "name": "Amber indicator",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 280,
+                  "y": 374,
+                  "w": 10,
+                  "h": 10,
+                  "fill": "#FFCB71",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "chest-led-c",
+                  "name": "Coral indicator",
+                  "type": "shape",
+                  "shape": "circle",
+                  "x": 304,
+                  "y": 374,
+                  "w": 10,
+                  "h": 10,
+                  "fill": "#F08C78",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "chest-bar",
+                  "name": "Speaker slot",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 280,
+                  "y": 403,
+                  "w": 39,
+                  "h": 4,
+                  "fill": "#79949B",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "leg-left",
+                  "name": "Left boot",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 248,
+                  "y": 454,
+                  "w": 39,
+                  "h": 39,
+                  "fill": "#75BDB1",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "leg-right",
+                  "name": "Right boot",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 312,
+                  "y": 454,
+                  "w": 39,
+                  "h": 39,
+                  "fill": "#75BDB1",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "foot-left",
+                  "name": "Left sole",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 248,
+                  "y": 472,
+                  "w": 49,
+                  "h": 10,
+                  "fill": "#547E82",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "foot-right",
+                  "name": "Right sole",
+                  "type": "shape",
+                  "shape": "roundRect",
+                  "x": 312,
+                  "y": 472,
+                  "w": 49,
+                  "h": 10,
+                  "fill": "#547E82",
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "arm-rest",
+                  "name": "Left arm · idle sway",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "pivot": {
+                    "x": 187,
+                    "y": 334
+                  },
+                  "children": [
+                    {
+                      "id": "arm-left-upper",
+                      "name": "Upper arm",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 178,
+                      "y": 349,
+                      "w": 30,
+                      "h": 67,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 3,
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "arm-left-hand",
+                      "name": "Small hand",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 170,
+                      "y": 395,
+                      "w": 39,
+                      "h": 33,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 3,
+                      "start": 0,
+                      "duration": 5.2
+                    }
+                  ],
+                  "tracks": [
+                    {
+                      "prop": "rotate",
+                      "mode": "keyframes",
+                      "period": 5.2,
+                      "delay": 0,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": -4,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 1.3,
+                          "v": 3,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.6,
+                          "v": -2,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 3.9,
+                          "v": 3,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 5.2,
+                          "v": -4,
+                          "ease": "inOut"
+                        }
+                      ]
+                    }
+                  ],
+                  "start": 0,
+                  "duration": 5.2
+                },
+                {
+                  "id": "arm-wave",
+                  "name": "Right arm · friendly wave",
+                  "type": "group",
+                  "x": 0,
+                  "y": 0,
+                  "pivot": {
+                    "x": 374,
+                    "y": 350
+                  },
+                  "children": [
+                    {
+                      "id": "arm-right-upper",
+                      "name": "Upper arm",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 382,
+                      "y": 344,
+                      "w": 30,
+                      "h": 66,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 3,
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "arm-right-joint",
+                      "name": "Elbow joint",
+                      "type": "shape",
+                      "shape": "circle",
+                      "x": 390,
+                      "y": 313,
+                      "w": 29,
+                      "h": 29,
+                      "fill": "#FFCF6E",
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "arm-right-fore",
+                      "name": "Forearm",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 410,
+                      "y": 286,
+                      "w": 28,
+                      "h": 68,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 3,
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "hand-wave",
+                      "name": "Waving mitten",
+                      "type": "shape",
+                      "shape": "ellipse",
+                      "x": 415,
+                      "y": 244,
+                      "w": 45,
+                      "h": 35,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 3,
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "hand-finger-1",
+                      "name": "Wave finger",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 400,
+                      "y": 218,
+                      "w": 12,
+                      "h": 34,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 2,
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "hand-finger-2",
+                      "name": "Wave finger",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 416,
+                      "y": 211,
+                      "w": 12,
+                      "h": 38,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 2,
+                      "start": 0,
+                      "duration": 5.2
+                    },
+                    {
+                      "id": "hand-finger-3",
+                      "name": "Wave finger",
+                      "type": "shape",
+                      "shape": "roundRect",
+                      "x": 432,
+                      "y": 217,
+                      "w": 12,
+                      "h": 33,
+                      "fill": "#F6F2E8",
+                      "stroke": "#76939A",
+                      "strokeWidth": 2,
+                      "start": 0,
+                      "duration": 5.2
+                    }
+                  ],
+                  "tracks": [
+                    {
+                      "prop": "rotate",
+                      "mode": "keyframes",
+                      "period": 5.2,
+                      "delay": 0,
+                      "repeat": true,
+                      "alternate": false,
+                      "keys": [
+                        {
+                          "t": 0,
+                          "v": 4,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 0.65,
+                          "v": 4,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 1,
+                          "v": -8,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 1.35,
+                          "v": 27,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 1.7,
+                          "v": -12,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.05,
+                          "v": 25,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.4,
+                          "v": -10,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 2.75,
+                          "v": 22,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 3.2,
+                          "v": -4,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 3.7,
+                          "v": 5,
+                          "ease": "inOut"
+                        },
+                        {
+                          "t": 5.2,
+                          "v": 4,
+                          "ease": "inOut"
+                        }
+                      ]
+                    }
+                  ],
+                  "start": 0,
+                  "duration": 5.2
+                }
+              ],
+              "tracks": [
+                {
+                  "prop": "scaleY",
+                  "mode": "keyframes",
+                  "period": 5.2,
+                  "delay": 0,
+                  "repeat": true,
+                  "alternate": false,
+                  "keys": [
+                    {
+                      "t": 0,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 0.75,
+                      "v": 0.96,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.15,
+                      "v": 1.05,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 1.5,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 2.6,
+                      "v": 0.99,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.2,
+                      "v": 1.04,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 3.6,
+                      "v": 1,
+                      "ease": "inOut"
+                    },
+                    {
+                      "t": 5.2,
+                      "v": 1,
+                      "ease": "inOut"
+                    }
+                  ]
+                }
+              ],
+              "start": 0,
+              "duration": 5.2
+            }
+          ],
+          "tracks": [
+            {
+              "prop": "translateY",
+              "mode": "keyframes",
+              "period": 5.2,
+              "delay": 0,
+              "repeat": true,
+              "alternate": false,
+              "keys": [
+                {
+                  "t": 0,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 0.65,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.1,
+                  "v": -12,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 1.7,
+                  "v": -21,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 2.5,
+                  "v": -18,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.2,
+                  "v": -8,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 3.8,
+                  "v": 2,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 4.4,
+                  "v": 0,
+                  "ease": "inOut"
+                },
+                {
+                  "t": 5.2,
+                  "v": 0,
+                  "ease": "inOut"
+                }
+              ]
+            }
+          ],
+          "start": 0,
+          "duration": 5.2
+        },
+        {
+          "id": "bot-caption",
+          "name": "Caption",
+          "type": "text",
+          "text": "A LITTLE HELLO GOES A LONG WAY",
+          "x": 280,
+          "y": 560,
+          "w": 520,
+          "h": 20.8,
+          "size": 13,
+          "color": "#3F716E",
+          "align": "center",
+          "weight": 650,
+          "start": 0,
+          "duration": 5.2
+        }
+      ]
+    }
+  ]
+}
