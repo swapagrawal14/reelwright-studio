@@ -21,7 +21,7 @@ export function normalizeTrack(input,{path='track',duration=1,errors=[]}={}){
   const alternate=Boolean(input.alternate??input.yoyo??loop.alternate??loop.yoyo);
   const repeats=Boolean(input.repeat??(typeof loopInput==='boolean'?loopInput:loop.enabled)??(input.loop===true));
   let window=null;
-  if(input.window!==undefined){
+  if(input.window!==undefined&&input.window!==null){
     const a=Array.isArray(input.window)?input.window[0]:input.window?.start;
     const b=Array.isArray(input.window)?input.window[1]:input.window?.end;
     if(!number(a)||!number(b)||a<0||b>1||a>=b){errors.push(`${path}: window must be a pair of cycle fractions, for example [0.62, 0.9].`);return null}
